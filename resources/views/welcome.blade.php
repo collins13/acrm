@@ -76,7 +76,7 @@
             <div class="carousel-container">
               <div class="carousel-content container">
                 <h2 class="animated fadeInDown">Welcome to <span>AFRICA FOR CHRIST RADIO MINISTRIES</span></h2>
-                <p class="animated fadeInUp">we provide Christ centered free consultancy and guidance services to all Christian organizations and 
+                <p class="animated fadeInUp">we provide Christ centered free consultancy and guidance services to all Christian organizations and
 					individual Christians who have been called to establish Radio stations for Africa.</p>
                 <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
               </div>
@@ -87,9 +87,9 @@
           <div class="carousel-item" style="background-image: url('assets/img/slide/slide-2.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+                {{-- <h2 class="animated fadeInDown">Lorem Ipsum Dolor</h2> --}}
+                {{-- <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> --}}
+                {{-- <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a> --}}
               </div>
             </div>
           </div>
@@ -98,9 +98,9 @@
           <div class="carousel-item" style="background-image: url('assets/img/slide/slide-3.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+                {{-- <h2 class="animated fadeInDown">Sequi ea ut et est quaerat</h2>
+                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> --}}
+                {{-- <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a> --}}
               </div>
             </div>
           </div>
@@ -130,18 +130,28 @@
           <div class="col-lg-6 video-box">
 			{{-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> --}}
 			<img src="/img/WhatsApp Image 2020-01-31 at 9.00.10 AM.jpeg" alt="" style="height:400px">
-			
+
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 
-            <div class="section-title">
+            <div class="section-title" style="text-align: left;">
               <h2>About Us</h2>
-              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+              <p>1. We receive & process requests from allover Africa for FMs & SDTs</p>
+              <br>
+             <p> 2. We identify and verify presented projects to determine their viability and sustainability to professional and technical standards for the interest of the targeted community</p>
+             <br>
+             <p>3. We do site survey and acertain technical parameters, management, sustainability, local government licensing and we address any challenge pertaining to the a particular projec</p>
+             <br>
+             <p>4.We list all those projects for funding from within and without</p>
+             <br>
+             <p>5.We implement those projects, commission them, train technical support stuff with terms and conditions of services and operation contract agreement entered into.</p>
+             <br>
+             <p>6. We periodically monitor the progress and operations of these stations and terminals</p>
             </div>
 
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            {{-- <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
               <h6 class="title"><a href="">Lorem Ipsum</a></h6>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
@@ -151,7 +161,7 @@
               <div class="icon"><i class="bx bx-gift"></i></div>
               <h6 class="title"><a href="">Nemo Enim</a></h6>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
+            </div> --}}
 
           </div>
         </div>
@@ -217,7 +227,7 @@
             <h6>News dissemination and entertainment for the public good.</h6>
 			<p>We envisage to have 1000 FM stations for Christ, one FM every region in Africa and one sound broadcast terminal every village.</p>
 			<br>
-			
+
           </div>
 
           <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="400">
@@ -558,7 +568,7 @@
     </section><!-- End Our Team Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
+    {{-- <section id="faq" class="faq section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -612,7 +622,7 @@
         </div>
 
       </div>
-    </section><!-- End Frequently Asked Questions Section -->
+    </section><!-- End Frequently Asked Questions Section --> --}}
 
     <!-- ======= Contact Us Section ======= -->
     <section id="contact" class="contact">
@@ -628,7 +638,9 @@
             <div class="info-box">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p> Stephen Munyao
+                P.O BOX 1012-00200
+                NRB, KENYA.</p>
             </div>
           </div>
 
@@ -636,7 +648,7 @@
             <div class="info-box">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>info@example.com<br>contact@example.com</p>
+              <p>nyaste@gmail.com</p>
             </div>
           </div>
 
@@ -644,7 +656,7 @@
             <div class="info-box ">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+              <p>+254716126440</p>
             </div>
           </div>
 
@@ -693,10 +705,11 @@
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>Mamba</h3>
             <p>
-              A108 Adam Street <br>
-              NY 535022, USA<br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+                Stephen Munyao<br>
+                P.O BOX 1012-00200<br>
+                NRB, KENYA.<br><br>
+              <strong>Phone:</strong> +254716126440<br>
+              <strong>Email:</strong> nyaste@gmail.com<br>
             </p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
