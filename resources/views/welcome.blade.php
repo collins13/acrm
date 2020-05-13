@@ -23,6 +23,7 @@
   <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="/assets/css/style.css" rel="stylesheet">
@@ -33,6 +34,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+}
+  </style>
 </head>
 
 <body>
@@ -129,7 +137,7 @@
         <div class="row no-gutters">
           <div class="col-lg-6 video-box">
 			{{-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> --}}
-			<img src="/img/WhatsApp Image 2020-01-31 at 9.00.10 AM.jpeg" alt="" style="height:400px">
+			<img src="/img/WhatsApp Image 2020-01-31 at 9.00.10 AM.jpeg" alt="" style="">
 
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
@@ -173,7 +181,7 @@
     <section class="about-lists">
       <div class="container">
 
-        <div class="row no-gutters">
+        {{-- <div class="row no-gutters">
 
           <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up">
             <span>01</span>
@@ -242,6 +250,114 @@
             <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
           </div> --}}
 
+        {{-- </div>  --}}
+<hr><br>
+        <div class="row">
+          <div class="col-md-6 mb-5">
+            <div class="row">
+              <div class="col-md-4">
+                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">AFRICA FOR CHRIST</span>
+                <br><br><br>
+                <span class="border border-secondary ml-3 h5 text-center" style="height: 45px; width:10rem; display: inline-block;">VIDEO <i class="fa fa-play-circle fa-1x"></i></span>
+              </div>
+  
+              <div class="col-md-8">
+                <div class="card" style="width: 22rem;">
+                  <div class="card-body">
+               
+                        <p>
+                          <center>slide-1</center>
+                          We provide Christ centered free consultancy and
+                          guidance services to all Christian organizations and
+                          individual Christians who have been called to establish
+                          Radio stations in Africa.This will be a witness in sharing
+                          Jesus and to reach millions of God's people with the
+                          everlasting Gospel through FM radio& podcasts.
+                        </p>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+           
+          </div>
+          
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-4">
+                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">FM RADIO STATIONS</span>
+                <br><br><br>
+                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">COMMUNITY B. TERMINALS</span>
+                <br><br><br>
+                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">PODCAST DEVELOPMENT</span>
+                <br>
+                <br>
+              </div>
+  
+              <div class="col-md-8 mb-3">
+                <div class="card" style="width: 22rem;">
+                  <div class="card-body">
+               
+                        <p>
+                          <center>slide-2</center>
+                          Africa is largely unentered and the large population is
+                          unreached by the gospel of Christ. The same population
+                          needs soul nurturing through continuous broadcasts and
+                          besides the gospel sharing the population need constant
+                          teachings and educational programs through radio
+                          broadcasts addressing the issues of Public health, sound
+                          sanitation and hygiene,
+                        </p>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+           
+          </div>
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-4">
+                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">PROJECTS - APPROVED</span>
+                <br><br><br>
+                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">NEW PROPOSALS</span>
+                <br><br><br>
+                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">PARTNER WITH US</span>
+                <br><br>
+              </div>
+  
+              <div class="col-md-8">
+                <div class="card" style="width: 22rem;">
+                  <div class="card-body">
+               
+                        <p>
+                          <center>slide-3</center>
+                          We envisage to have 1000+ FM stations for Christ, one FM every region in
+                          Africa and one community sound broadcast terminal (SBT) every village.
+                          We are looking for Christ centered organizations, Christian churches,
+                          individual men and women of high calling who are either ready to
+                          establish FM Radio stations in their region for the above mission only, or are
+                          ready to establish Sound Broadcast Terminal (SBT) in their region for the
+                          above mission only or are ready and willing to support any of the above
+                          project either in their village or far away region.
+                        </p>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-12 mt-5">
+          <div class="card">
+          
+            <div class="card-body">
+              <p>OUR ROLE<br />1. We receive &amp; process requests from allover Africa for FMs &amp; SDTs<br />2. We identify and verify presented projects to determine their viability and sustainability to professional and technical standards for the interest of the<br />targeted community.<br />3. We do site survey and acertain technical parameters, management, sustainability, local government licensing and we address any challenge pertaining to<br />the a particular project.<br />4.We list all those projects for funding from within and without.<br />5.We implement those projects, commission them, train technical support stuff with terms and conditions of services and operation contract agreement<br />entered into.<br />6. We periodically monitor the progress and operations of these stations and terminals.<br />7.We continuous update the project sponsors and donors of the progress and impact of the<br />
+                Projects. Through sharing of evaluation and monitoring reports.</p>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -299,38 +415,89 @@
         </div>
 
         <div class="row">
+          
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="icofont-computer"></i></div>
-            <h6 class="title"><a href="">Lorem Ipsum</a></h6>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <h6 class="title"><a href="">FM RADIO</a></h6>
+            <div class="card" style="width: 22rem;">
+              <div class="card-body">
+                <div>
+                  <div class="text-justify">We envisage to install 1000 FM stations around Africa, we are focusing more</div>
+                  <div class="text-justify">1kW. Basically this require transmitter, antennae , cables, and mast.</div>
+                  <div class="text-justify">This can cover a radius of 50miles radius. However other regions might need a</div>
+                  <div class="text-justify">much smaller unit for 300watts. That should cover 10miles radius.</div>
+                  <div class="text-justify">Once the infrastructure is up and running we can decide with local stakeholders,</div>
+                  <div class="text-justify">donors and other partners whether it should be studio operated or automated</div>
+                  <div class="text-justify">content flow through online, satellite pre-recorded programs.</div>
+                  <div class="text-justify">The local stakeholders shall be in charge of local operations and related</div>
+                  <div class="text-justify">expenses. These includes staff, utility bills and regular submission of reports.</div>
+                  <div class="text-justify">We have list of completed projects and those that have been verified by our</div>
+                  <div class="text-justify">board and ready for funding. If you are interested in sponsoring one of these</div>
+                  <div class="text-justify">projects like click the one you wish to be partner. For those that will sponsor</div>
+                  <div class="text-justify">50%-100% the station shall be named after their name.</div>
+                  <div class="text-justify">YES I wish to partner with you in adopting FM project.</div>
+                  <div class="text-justify">Yes, I wish to donate to a project</div>
+                  <div class="text-justify">Yes I wish to propose a project for consideration</div>
+                  <div class="text-justify">Yes I wish to pray for the project</div>
+                  <br><br><br>
+                  </div>
+              </div>
+            </div>
           </div>
+
+
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
-            <h6 class="title"><a href="">Dolor Sitema</a></h6>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <h6 class="title"><a href="">COMMUNITY BROADCAST TERMINAL</a></h6>
+            <div class="card" style="width: 22rem;">
+              <div class="card-body">
+                <p class="text-justify">This is very simple setup system widely used in mosques and many<br />
+                  heavily crowded open air marketplace in Uganda.<br />
+                  The system comprise loud speakers, audio amplifier, small content play<br />
+                  out ipod and two microphones.<br />The system is either auto operated remotely or one man show. In a<br />
+                  crowded open air market place, a kiosk is opened to house the amplifier<br />
+                  and a 20ft pole is erected outside to hold the loud speakers high up in<br />the air.<br />
+                  On top of the hour news is played out, then followed with a one gospel<br />
+                  music then 5-10 five minutes of a message which is either pre recorded<br />
+                  or live. The message can be a sermon,health topic,educational program<br />
+                  or foreign language teaching or a local leader passing a message. Then<br />
+                  in between paid announcements are made. i.e. a school opening date,<br />
+                  lost child, found lost phone, vaccination exercise.<br />
+                  The local stakeholder are responsible for the terminal.<br />
+                  YES I wish to partner with you in adopting FM project.<br />
+                  Yes, I wish to donate to a project<br />
+                  Yes I wish to propose a project for consideration<br />
+                  Yes I wish to pray for the project</p>
+              </div>
+            </div>
           </div>
+
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="icofont-earth"></i></div>
-            <h6 class="title"><a href="">Sed ut perspiciatis</a></h6>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="icofont-image"></i></div>
-            <h6 class="title"><a href="">Magni Dolores</a></h6>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="icofont-settings"></i></div>
-            <h6 class="title"><a href="">Nemo Enim</a></h6>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="icofont-tasks-alt"></i></div>
-            <h6 class="title"><a href="">Eiusmod Tempor</a></h6>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
-        </div>
+            <h6 class="title"><a href="">PODCAST DEVELOPMENT</a></h6>
+            <div class="card" style="width: 22rem;">
+              <div class="card-body">
+                <p class="text-justify">This is building and content resource management where local FM<br />
+                  stations/churches /professionals can record 5min/13min programs in<br />
+                  high quality and well researched topics. Then these programs are<br />
+                  collected and edited to required standards before uploaded to archives of<br />
+                  asset management for easy downloading and easy playout.<br />
+                  This can be accessed by anyone for free from online app that is mobile<br />
+                  friendly. This asset management system shall be used as a resource for<br />
+                  content supply for FM stations and CBT. The podcast production is<br />
+                  managed by Central administration. Of Africa For Christ Radios of Sun<br />
+                  Ministries.<br />YES, I wish to partner with you in adopting FM project.<br />
+                  Yes, I wish to donate to a project<br />
+                  Yes I wish to propose a project for consideration<br />
+                  Yes I wish to pray for the project</p>
 
+                  <br><br><br><br><br><br><br><br><br>
+              </div>
+            </div>
+          </div>
+   
+         
+        </div>
       </div>
     </section><!-- End Services Section -->
 
@@ -625,11 +792,66 @@
     </section><!-- End Frequently Asked Questions Section --> --}}
 
     <!-- ======= Contact Us Section ======= -->
+
+    <section class="team">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Blog</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card" style="width: 22rem;">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Card image cap">
+              <div class="meta-date text-center p-2">
+                <span class="day">07</span>
+                <span class="mos">February</span>
+                <span class="yr">2019</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Blog title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          
+          <br>
+          <div class="col-md-4 mb-3" data-aos="fade-up">
+            <div class="card" style="width: 22rem;">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Card image cap">
+              <div class="meta-date text-center p-2">
+                <span class="day">07</span>
+                <span class="mos">February</span>
+                <span class="yr">2019</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Blog title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card" style="width: 22rem;">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Card image cap">
+              <div class="meta-date text-center p-2">
+                <span class="day">07</span>
+                <span class="mos">February</span>
+                <span class="yr">2019</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Blog title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </section>
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
-          <h2>Contact Us</h2>
+          <h2>PROJECT PROPOSALS</h2>
         </div>
 
         <div class="row">
@@ -661,10 +883,40 @@
           </div>
 
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+            <p>If you have a FM radio or CBT project proposal we are here for you.
+              We shall offer you free consultancy services to you and your team.
+              We shall do site survey, evaluate the project for free and compile a
+              feasibility study that will show its sustainability. After that we shall post
+              it for possible fund raising if the local applicant doesn’t have sufficient
+              funds.</p>
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-lg-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name_org" class="form-control" id="name_org" placeholder="Name of Organisation" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="p_adress" class="form-control" id="p_adress" placeholder="Physical adress" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="t_no" id="t_no" class="form-control" placeholder="Telephone No">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="m_no" id="m_no" class="form-control" placeholder="Mobile No">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="town" id="town" class="form-control" placeholder="Town/City">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="country" id="country" class="form-control" placeholder="Country">
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-6 form-group">
