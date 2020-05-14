@@ -61,8 +61,8 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          {{-- <li><a href="#team">Team</a></li> --}}
-          {{-- <li><a href="#donate">Donate</a></li> --}}
+          <li><a href="#team">Team</a></li>
+          <li><a href="#donate">Donate</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -137,7 +137,7 @@
         <div class="row no-gutters">
           <div class="col-lg-6 video-box">
 			{{-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> --}}
-			<img src="/img/WhatsApp Image 2020-01-31 at 9.00.10 AM.jpeg" alt="" style="">
+			{{-- <img src="/img/WhatsApp Image 2020-01-31 at 9.00.10 AM.jpeg" alt="" style=""> --}}
 
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
