@@ -502,7 +502,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Our Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    {{-- <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="section-title">
@@ -652,10 +652,10 @@
         </div>
 
       </div>
-    </section><!-- End Our Portfolio Section -->
+    </section><!-- End Our Portfolio Section --> --}}
 
     <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team">
+    {{-- <section id="team" class="team">
       <div class="container">
 
         <div class="section-title">
@@ -732,7 +732,7 @@
         </div>
 
       </div>
-    </section><!-- End Our Team Section -->
+    </section><!-- End Our Team Section --> --}}
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     {{-- <section id="faq" class="faq section-bg">
