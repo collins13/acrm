@@ -458,7 +458,7 @@
                 <h5 class="card-title">Complete 0%</h5>
               </div>
               <div class="card-footer bg-transparent border-success">
-                <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a>
+                <a href="#projects" class="btn btn-outline-success btn-block">Fund this Project</a>
               </div>
             </div>
           </div>
@@ -469,7 +469,7 @@
                 <h5 class="card-title">Complete 0%</h5>
               </div>
               <div class="card-footer bg-transparent border-success">
-                <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a>
+                <a href="#projects" class="btn btn-outline-success btn-block">Fund this Project</a>
               </div>
             </div>
           </div>
@@ -480,7 +480,7 @@
                 <h5 class="card-title">Complete 0%</h5>
               </div>
               <div class="card-footer bg-transparent border-success">
-                <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a>
+                <a href="#projects" class="btn btn-outline-success btn-block">Fund this Project</a>
               </div>
             </div>
           </div>
@@ -491,7 +491,7 @@
                 <h5 class="card-title">Complete 0%</h5>
               </div>
               <div class="card-footer bg-transparent border-success">
-                <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a>
+                <a href="#projects" class="btn btn-outline-success btn-block">Fund this Project</a>
               </div>
             </div>
           </div>
