@@ -894,19 +894,7 @@
                   <input type="text" name="zip" class="form-control" id="zip" placeholder="Your zip" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
-                <label for="">I, wish to partiner with</label>
-                <div class="col-lg-3 form-group">  
-                  <input type="text" name="zip" class="form-control" id="zip" placeholder="" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div> <label for="">V</label> <div class="col-lg-3 form-group">
-                  <input type="text" name="zip" class="form-control" id="zip" placeholder="" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div> 
-          <label for="">Project. I wish to support this project with a donation of </label>
-        <div class="col-lg-4 form-group">
-        <input type="text" name="zip" class="form-control" id="zip" placeholder="$" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-        <div class="validate"></div>
-      </div>
+           
               </div>
                 
          
