@@ -60,9 +60,9 @@
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#donate">Donate</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#partnership">Partnership</a></li>
+          <li><a href="#projects">Donate</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -252,119 +252,12 @@
 
         {{-- </div>  --}}
 <hr><br>
-        <div class="row">
-          <div class="col-md-6 mb-5">
-            <div class="row">
-              <div class="col-md-4">
-                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">AFRICA FOR CHRIST</span>
-                <br><br><br>
-                <span class="border border-secondary ml-3 h5 text-center" style="height: 45px; width:10rem; display: inline-block;">VIDEO <i class="fa fa-play-circle fa-1x"></i></span>
-              </div>
-  
-              <div class="col-md-8">
-                <div class="card" style="width: 22rem;">
-                  <div class="card-body">
-               
-                        <p>
-                          <center>slide-1</center>
-                          We provide Christ centered free consultancy and
-                          guidance services to all Christian organizations and
-                          individual Christians who have been called to establish
-                          Radio stations in Africa.This will be a witness in sharing
-                          Jesus and to reach millions of God's people with the
-                          everlasting Gospel through FM radio& podcasts.
-                        </p>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
-           
-          </div>
-          
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-4">
-                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">FM RADIO STATIONS</span>
-                <br><br><br>
-                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">COMMUNITY B. TERMINALS</span>
-                <br><br><br>
-                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">PODCAST DEVELOPMENT</span>
-                <br>
-                <br>
-              </div>
-  
-              <div class="col-md-8 mb-3">
-                <div class="card" style="width: 22rem;">
-                  <div class="card-body">
-               
-                        <p>
-                          <center>slide-2</center>
-                          Africa is largely unentered and the large population is
-                          unreached by the gospel of Christ. The same population
-                          needs soul nurturing through continuous broadcasts and
-                          besides the gospel sharing the population need constant
-                          teachings and educational programs through radio
-                          broadcasts addressing the issues of Public health, sound
-                          sanitation and hygiene,
-                        </p>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
-           
-          </div>
-
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-4">
-                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">PROJECTS - APPROVED</span>
-                <br><br><br>
-                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">NEW PROPOSALS</span>
-                <br><br><br>
-                <span class="border border-secondary ml-3 text-center" style="height: 45px; width:10rem; display: inline-block;">PARTNER WITH US</span>
-                <br><br>
-              </div>
-  
-              <div class="col-md-8">
-                <div class="card" style="width: 22rem;">
-                  <div class="card-body">
-               
-                        <p>
-                          <center>slide-3</center>
-                          We envisage to have 1000+ FM stations for Christ, one FM every region in
-                          Africa and one community sound broadcast terminal (SBT) every village.
-                          We are looking for Christ centered organizations, Christian churches,
-                          individual men and women of high calling who are either ready to
-                          establish FM Radio stations in their region for the above mission only, or are
-                          ready to establish Sound Broadcast Terminal (SBT) in their region for the
-                          above mission only or are ready and willing to support any of the above
-                          project either in their village or far away region.
-                        </p>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
-           
-          </div>
-        </div>
-        <div class="col-12 mt-5">
-          <div class="card">
-          
-            <div class="card-body">
-              <p>OUR ROLE<br />1. We receive &amp; process requests from allover Africa for FMs &amp; SDTs<br />2. We identify and verify presented projects to determine their viability and sustainability to professional and technical standards for the interest of the<br />targeted community.<br />3. We do site survey and acertain technical parameters, management, sustainability, local government licensing and we address any challenge pertaining to<br />the a particular project.<br />4.We list all those projects for funding from within and without.<br />5.We implement those projects, commission them, train technical support stuff with terms and conditions of services and operation contract agreement<br />entered into.<br />6. We periodically monitor the progress and operations of these stations and terminals.<br />7.We continuous update the project sponsors and donors of the progress and impact of the<br />
-                Projects. Through sharing of evaluation and monitoring reports.</p>
-            </div>
-          </div>
-        </div>
 
       </div>
     </section><!-- End About Lists Section -->
 
     <!-- ======= Counts Section ======= -->
-    <section class="counts section-bg">
+    {{-- <section class="counts section-bg">
       <div class="container">
 
         <div class="row">
@@ -404,7 +297,7 @@
         </div>
 
       </div>
-    </section><!-- End Counts Section -->
+    </section><!-- End Counts Section --> --}}
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -500,6 +393,173 @@
         </div>
       </div>
     </section><!-- End Services Section -->
+
+
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header">Radio Tarumbeta –Kenya</div>
+              <div class="card-body">
+                <h5 class="card-title">Completed</h5>
+                
+              </div>
+              <div class="card-footer bg-transparent border-success">
+                {{-- <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a> --}}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header">Radio Maranatha-Uganda</div>
+              <div class="card-body">
+                <h5 class="card-title">Completed</h5>
+              </div>
+              <div class="card-footer bg-transparent border-success">
+                {{-- <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a> --}}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header">Radio Kisima- Kenya</div>
+              <div class="card-body">
+                <h5 class="card-title">Completed</h5>
+              </div>
+              <div class="card-footer bg-transparent border-success">
+                {{-- <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a> --}}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header">Radio Kisangani-Congo</div>
+              <div class="card-body">
+                <h5 class="card-title">Completed</h5>
+              </div>
+              <div class="card-footer bg-transparent border-success">
+                {{-- <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a> --}}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header">Radio Bunia-Congo</div>
+              <div class="card-body">
+                <h5 class="card-title">Complete 0%</h5>
+              </div>
+              <div class="card-footer bg-transparent border-success">
+                <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header">Radio Lira-Uganda</div>
+              <div class="card-body">
+                <h5 class="card-title">Complete 0%</h5>
+              </div>
+              <div class="card-footer bg-transparent border-success">
+                <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header">RadioKindu-Congo</div>
+              <div class="card-body">
+                <h5 class="card-title">Complete 0%</h5>
+              </div>
+              <div class="card-footer bg-transparent border-success">
+                <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+              <div class="card-header">Podcast Ethiopia</div>
+              <div class="card-body">
+                <h5 class="card-title">Complete 0%</h5>
+              </div>
+              <div class="card-footer bg-transparent border-success">
+                <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <hr>
+        <div class="section-title">
+          <h2>Projects Proposal</h2>
+        </div>
+        <p>
+          If you have a FM radio or CBT project proposal we are here for you.
+          We shall offer you free consultancy services to you and your team.</p>
+          <p> shall do site survey, evaluate the project for free and compile a
+          feasibility study that will show its sustainability. After that we shall post
+          it for possible fund raising if the local applicant doesn’t have sufficient
+          funds.
+        </p>
+        <div class="card">
+         
+          <div class="card-body">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name_org" class="form-control" id="name_org" placeholder="Name of Organisation" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="p_adress" class="form-control" id="p_adress" placeholder="Physical adress" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="t_no" id="t_no" class="form-control" placeholder="Telephone No">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="m_no" id="m_no" class="form-control" placeholder="Mobile No">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="town" id="town" class="form-control" placeholder="Town/City">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" name="country" id="country" class="form-control" placeholder="Country">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+           
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Project description"></textarea>
+                <div class="validate"></div>
+              </div>
+              
+              <div class="text-center"><button type="submit" class="btn btn-success">Submit</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section --> 
 
     <!-- ======= Our Portfolio Section ======= -->
     {{-- <section id="portfolio" class="portfolio section-bg">
@@ -792,66 +852,96 @@
     </section><!-- End Frequently Asked Questions Section --> --}}
 
     <!-- ======= Contact Us Section ======= -->
-
-    <section class="team">
+    <section id="partnership" class="contact">
       <div class="container">
+
         <div class="section-title">
-          <h2>Our Blog</h2>
+          <h2>PARTNERSHIP</h2>
         </div>
 
         <div class="row">
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="card" style="width: 22rem;">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Card image cap">
-              <div class="meta-date text-center p-2">
-                <span class="day">07</span>
-                <span class="mos">February</span>
-                <span class="yr">2019</span>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Blog title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          
-          <br>
-          <div class="col-md-4 mb-3" data-aos="fade-up">
-            <div class="card" style="width: 22rem;">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Card image cap">
-              <div class="meta-date text-center p-2">
-                <span class="day">07</span>
-                <span class="mos">February</span>
-                <span class="yr">2019</span>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Blog title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="card" style="width: 22rem;">
-              <img class="card-img-top" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Card image cap">
-              <div class="meta-date text-center p-2">
-                <span class="day">07</span>
-                <span class="mos">February</span>
-                <span class="yr">2019</span>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Blog title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
+
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+            <p>Many projects proposals that have not been completed needs partners and
+              sponsors. You can adopt a project as the Holy Spirit shall guide you in support
+              of evangelistic effort.</p>
+              <P>Any information that you shall provide shall remain confidential and never shall
+                we share with any other party.</P>
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="phone" class="form-control" id="phone" placeholder="Your phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="adress" class="form-control" id="adress" placeholder="Your adress" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-3 form-group">
+                  <input type="text" name="city" class="form-control" id="city" placeholder="Your city" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-3 form-group">
+                  <input type="text" name="zip" class="form-control" id="zip" placeholder="Your zip" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <label for="">I, wish to partiner with</label>
+                <div class="col-lg-3 form-group">  
+                  <input type="text" name="zip" class="form-control" id="zip" placeholder="" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div> <label for="">V</label> <div class="col-lg-3 form-group">
+                  <input type="text" name="zip" class="form-control" id="zip" placeholder="" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div> 
+          <label for="">Project. I wish to support this project with a donation of </label>
+        <div class="col-lg-4 form-group">
+        <input type="text" name="zip" class="form-control" id="zip" placeholder="$" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+        <div class="validate"></div>
       </div>
-    </div>
+              </div>
+                
+         
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Submit</button></div>
+              <br>
+            May God bless you most abundantly. We shall periodically update you on the
+progress of the project you have sponsored above.
+            </form>
+            
+          </div>
+
+        </div>
+
+      </div>
     </section>
+
+
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
-          <h2>PROJECT PROPOSALS</h2>
+          <h2>CONTACT US</h2>
         </div>
 
         <div class="row">
@@ -860,9 +950,7 @@
             <div class="info-box">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p> Stephen Munyao
-                P.O BOX 1012-00200
-                NRB, KENYA.</p>
+              <p> Enoch Mogusu</p>
             </div>
           </div>
 
@@ -870,7 +958,7 @@
             <div class="info-box">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>nyaste@gmail.com</p>
+              <p>mogusu@gmail.com</p>
             </div>
           </div>
 
@@ -878,7 +966,7 @@
             <div class="info-box ">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
-              <p>+254716126440</p>
+              <p>+254 722 508899</p>
             </div>
           </div>
 
@@ -895,30 +983,7 @@
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
-                <div class="col-lg-6 form-group">
-                  <input type="text" name="name_org" class="form-control" id="name_org" placeholder="Name of Organisation" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-6 form-group">
-                  <input type="text" name="p_adress" class="form-control" id="p_adress" placeholder="Physical adress" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-3">
-                  <input type="text" name="t_no" id="t_no" class="form-control" placeholder="Telephone No">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-3">
-                  <input type="text" name="m_no" id="m_no" class="form-control" placeholder="Mobile No">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-3">
-                  <input type="text" name="town" id="town" class="form-control" placeholder="Town/City">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-3">
-                  <input type="text" name="country" id="country" class="form-control" placeholder="Country">
-                  <div class="validate"></div>
-                </div>
+         
                 <div class="col-lg-6 form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
@@ -957,30 +1022,38 @@
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>ACRM</h3>
             <p>
-                Stephen Munyao<br>
-                P.O BOX 1012-00200<br>
-                NRB, KENYA.<br><br>
-              <strong>Phone:</strong> +254716126440<br>
-              <strong>Email:</strong> nyaste@gmail.com<br>
+                Enoch Mogusu<br>
+
+              <strong>Phone:</strong> +254 722 508899<br>
+              <strong>Email:</strong> mogusu@gmail.com<br>
             </p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h6>Social Links</h6>
+            
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+           
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h6>Useful Links</h6>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#home">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="#projects">Projects</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="#partnership">Partnership</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="#projects">Donate</a></li>
+              {{-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
+            </ul> --}}
           </div>
 
           {{-- <div class="col-lg-3 col-md-6 footer-links">
