@@ -46,11 +46,11 @@
                     <div class="col-lg-12">
                         <div class="slider-content-area">
                             <div class="slide-text">
-                                <h1 class="homepage-three-title">Welcome to  <span>Linkweb</span> Web Agency</h1>
-                                <h2>With Linkweb responsive landing page template, <br>you can promote your all web design & development services.</h2>
+                                <h1 class="homepage-three-title">Welcome to  <span>ACRM</span> AFRICA FOR CHRIST RADIO MINISTRIES</h1>
+                                {{-- <h2>Africa is largely unentered and the large populaon is unreached by the gospel of Christ. </h2> --}}
                                 <div class="slider-content-btn">
                                     <a class="btn11" href="#"><span>Read More</span><div class="transition"></div></a>
-                                    <a class="btn11" href="#"><span>Contact</span><div class="transition"></div></a>
+                                    <a class="btn11" href=""><span>Contact</span><div class="transition"></div></a>
                                 </div>
                             </div>
                         </div>
