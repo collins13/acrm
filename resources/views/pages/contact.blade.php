@@ -9,7 +9,7 @@
 				<h2><span>Contact Us</span></h2>
 				<ul class="page-title-link">
 					<li><a href="#">Home</a></li>
-					<li><a href="#">Pricing</a></li>
+					<li><a href="#">Contact us</a></li>
 				</ul>
 			</div>
 		</div>

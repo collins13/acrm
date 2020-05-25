@@ -121,12 +121,12 @@
                         </div>
 
                         <ul class="footer-links hov">
-                            <li><a href="#">Home <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Blog <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Pricing <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">About <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Faq <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li>
+                            <li><a href="{{ url('/') }}">Home <span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="{{ route('about') }}">About us <span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="{{ route('services') }}">Our Services <span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="{{ route('projects') }}">Projects <span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="{{ route('partnership') }}">Partnership <span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="{{ route('contact') }}">Contact <span class="icon icon-arrow-right2"></span></a></li>
                         </ul><!-- end links -->
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
