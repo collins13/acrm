@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>ACRM</title>  
+    <title>AFRICA FOR CHRIST RADIO MINISTRIES</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,11 +29,13 @@
 
     <!-- Modernizer for Portfolio -->
     <script src="/base/js/modernizer.js"></script>
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
 
 </head>
 <body>
@@ -59,10 +61,8 @@
 						<div class="social-box">
 							<ul>
 								<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 								<li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
 							<ul>
 						</div>
 					</div>
@@ -99,7 +99,7 @@
                         <li><a href="{{ route('services') }}">Our Services</a></li>
                         <li><a href="{{ route('projects') }}">Projects</a></li>
                         <li><a href="{{ route('partnership') }}">Partnership</a></li>
-                        <li><a href="{{ route('projects') }}">Donate</a></li>
+                        <li><a href="{{ route('donate') }}">Donate</a></li>
                         {{-- <li><a href="pricing.html">Pricing</a></li> --}}
 						<li><a href="{{ route('contact') }}">Contact</a></li>
                     </ul>
@@ -156,8 +156,7 @@
 							<li><a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a></li>
 							<li><a href="https://linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="https://plus.google.com/" class="googlePlus"><i class="fa fa-google-plus"></i></a></li>
+							
 						</ul>
 						
 					</div>
@@ -173,10 +172,8 @@
         <div class="container">
             <div class="footer-distributed">
                 <div class="footer-left">                   
-                    <p class="footer-company-name">All Rights Reserved. &copy; <?= date('Y') ?> <a href="#">ACRM</a>
+                    <p class="footer-company-name">All Rights Reserved. &copy; <?= date('Y') ?> <a href="#">AFRICA FOR CHRIST RADIO MINISTRIES</a>
                 </div>
-
-                
             </div>
         </div><!-- end container -->
     </div><!-- end copyrights -->
@@ -188,7 +185,26 @@
     <!-- ALL PLUGINS -->
     <script src="/base/js/custom.js"></script>
     <script src="/base/js/portfolio.js"></script>
-    <script src="/base/js/hoverdir.js"></script>    
+    <script src="/base/js/hoverdir.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
+    <script>
+        $(document).ready(function(){
+            
+            @if(Session::has('success'))
+            toastr.success("{{ Session::get('success') }}");
+            @endif
+            @if(Session::has('error'))
+            toastr.error("{{ Session::get('error') }}");
+            @endif
+            @if(Session::has('info'))
+            toastr.info("{{ Session::get('info') }}");
+            @endif
+            @if(Session::has('warning'))
+            toastr.warning("{{ Session::get('warning') }}");
+            @endif
+        })
+    </script>
+@stack('scripts')
 </body>
 </html>

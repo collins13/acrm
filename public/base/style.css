@@ -337,7 +337,7 @@ a img.aligncenter {
 	font-size: 16px;
 }
 .email-box a:hover{
-	color: #cdd51f;
+	color: #3BB143;
 }
 .email-box a i{
 	padding: 0px 5px;
@@ -351,7 +351,7 @@ a img.aligncenter {
 	font-size: 16px;
 }
 .phone-box a:hover{
-	color: #cdd51f;
+	color: #3BB143;
 }
 .phone-box a i{
 	padding: 0px 5px;
@@ -371,7 +371,7 @@ a img.aligncenter {
 	font-size: 20px;
 }
 .social-box ul li a:hover{
-	color: #cdd51f;
+	color: #3BB143;
 }
 
 
@@ -431,7 +431,7 @@ a img.aligncenter {
 	color: #ffffff;
 	box-shadow: 0 4px 3px 0 rgba(5, 16, 44, .15);
 	border-radius: 10px;
-	background: #cdd51f;
+	background: #3BB143;
 }
 
 .header_style_01 .navbar-light .navbar-nav > li:hover a,
@@ -439,7 +439,7 @@ a img.aligncenter {
     color: #ffffff;
 	box-shadow: 0 4px 3px 0 rgba(5, 16, 44, .15);
 	border-radius: 10px;
-	background: #cdd51f;
+	background: #3BB143;
 }
 
 .header_style_01 .navbar-right > li {
@@ -477,7 +477,7 @@ li.social-links a {
 .navbar-light .navbar-toggler {
 	padding: 10px 8px 8px 8px;
 	border-radius: 0px;
-	border-color: #cdd51f;
+	border-color: #3BB143;
 	float: right;
 	margin-top: 12px;
 }
@@ -547,7 +547,7 @@ li.social-links a {
 }
 
 .slide-text h1 span{
-	color: #cdd51f;
+	color: #3BB143;
 }
 
 .slide-text h2 {
@@ -561,7 +561,7 @@ li.social-links a {
 }
 
 .slider-wrapper .owl-nav .owl-prev, .slider-wrapper .owl-nav .owl-next {
-    background: #cdd51f;
+    background: #3BB143;
     height: 60px;
     top: 50%;
     transform: translateY(-50%);
@@ -630,7 +630,7 @@ li.social-links a {
     text-decoration:none;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     text-transform: uppercase!important;
     letter-spacing: 1px;
     color: #fff;
@@ -658,7 +658,7 @@ li.social-links a {
     width: 100%;
     height: 100%;
     display: block;
-    background: #cdd51f;
+    background: #3BB143;
     position: absolute;  
     left: 0%;
     opacity: 1;
@@ -916,7 +916,7 @@ li.social-links a {
 .portfolio-filter ul li .btn-dark {
     box-shadow: none;
     background-color: transparent;
-    border: 2px solid #cdd51f !important;
+    border: 2px solid #3BB143 !important;
     color: #393939;
     font-weight: 500;
     font-size: 14px;
@@ -970,7 +970,7 @@ li.social-links a {
 }
 
 .da-thumbs .pitem a div i {
-    background-color: #cdd51f;
+    background-color: #3BB143;
     position: absolute;
     color: #ffffff !important;
     bottom: 0;
@@ -1001,7 +1001,7 @@ li.social-links a {
 }
 
 .desc h3 i {
-    color: #cdd51f;
+    color: #3BB143;
     font-size: 37px;
     vertical-align: middle;
     margin-right: 12px;
@@ -1011,7 +1011,7 @@ li.social-links a {
     padding: 30px;
     position: relative;
     background: #393939;
-    border: 4px solid #cdd51f;
+    border: 4px solid #3BB143;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -1380,7 +1380,7 @@ li.social-links a {
     padding-top: 10px;
     font-size: 19px;
     font-style: normal;
-    color: #cdd51f;
+    color: #3BB143;
     padding-bottom: 0;
 }
 
@@ -1415,7 +1415,7 @@ li.social-links a {
 	font-size: 16px;
 }
 .message-box ul li i{
-	color: #cdd51f;
+	color: #3BB143;
 	font-size: 24px;
 	padding-right: 10px;
 }
@@ -1444,7 +1444,7 @@ li.social-links a {
 }
 
 .hoverbutton {
-    background-color: #cdd51f;
+    background-color: #3BB143;
     position: absolute;
     color: #ffffff !important;
     top: 0;
@@ -1631,7 +1631,7 @@ hr.invis1 {
 
 .customwidget li i {
     margin-right: 5px;
-	color: #cdd51f;
+	color: #3BB143;
 }
 
 .customwidget li {
@@ -1726,7 +1726,7 @@ hr.invis1 {
     border-radius: 10px;
     font-size: 26px;
 	color: #ffffff;
-    background-color: #cdd51f;
+    background-color: #3BB143;
     margin: 0 auto 22px;
     position: relative;
     text-align: center;
@@ -2266,7 +2266,7 @@ select.mobile-device {
 
 .footer-links a:hover,
 .footer a:hover {
-    color: #cdd51f !important;
+    color: #3BB143 !important;
 }
 
 .footer-links li {
@@ -2307,7 +2307,7 @@ select.mobile-device {
 }
 .footer-recent ul li i{
 	font-size: 14px;
-	color: #cdd51f;
+	color: #3BB143;
 }
 .footer-recent ul li span {
 	font-size: 12px;
@@ -2347,7 +2347,7 @@ select.mobile-device {
 	font-size: 16px;
 }
 .social-list li a:hover{
-	border: 3px solid #cdd51f;
+	border: 3px solid #3BB143;
 }
 
 
@@ -2394,7 +2394,7 @@ select.mobile-device {
 }
 
 .footer-distributed .footer-company-name a:hover{
-	color: #cdd51f;
+	color: #3BB143;
 }
 
 
@@ -2531,7 +2531,7 @@ select.mobile-device {
 }
 
 .dmtop:hover {
-	background-color: #cdd51f;
+	background-color: #3BB143;
 }
 
 .icon_wrap {
@@ -2550,7 +2550,7 @@ select.mobile-device {
 .stat-wrap h3 {
     font-size: 22px;
     font-weight: 600;
-    color: #cdd51f;
+    color: #3BB143;
     margin: 0 !important;
     padding: 0 !important;
     line-height: 1 !important:
@@ -2599,7 +2599,7 @@ select.mobile-device {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #cdd51f;
+    background: #3BB143;
     z-index: 11000;
     position: fixed;
     display: block;
@@ -3062,9 +3062,9 @@ select.mobile-device {
 .btn-light {
     padding: 13px 40px;
     font-size: 18px;
-    border: 2px solid #cdd51f;
+    border: 2px solid #3BB143;
     color: #ffffff;
-    background-color: #cdd51f;
+    background-color: #3BB143;
 }
 
 .btn-dark {
@@ -3077,7 +3077,7 @@ select.mobile-device {
 
 .btn-light:hover,
 .btn-light:focus {
-    border-color: #cdd51f;
+    border-color: #3BB143;
     color: rgba(255, 255, 255);
 	background: #393939;
 }
@@ -3228,7 +3228,7 @@ select.mobile-device {
 .about-icon span{
 	font-size: 48px;
 	color: #393939;
-	background: #cdd51f;
+	background: #3BB143;
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -3242,7 +3242,7 @@ select.mobile-device {
 	color: #393939;
 }
 .about-text h3 a:hover{
-	color: #cdd51f;
+	color: #3BB143;
 }
 
 .about-item:hover .about-icon{
@@ -3280,7 +3280,7 @@ select.mobile-device {
     transition: all 0.5s ease 0s;
 }
 .pricingTable:hover{
-    background: #cdd51f;
+    background: #3BB143;
     border-color: #fff;
     color: #fff;
 }
@@ -3347,9 +3347,9 @@ select.mobile-device {
     right: 0;
     transition: all 0.5s ease 0s;
 }
-.pricingTable:hover .pricing-content:before{ background: #cdd51f; }
+.pricingTable:hover .pricing-content:before{ background: #3BB143; }
 .pricingTable .pricingTable-signup{  
-	border: 1px solid #cdd51f;
+	border: 1px solid #3BB143;
     color: #043565;
 	top: 0;
     transition: all 0.5s ease 0s;
@@ -3408,14 +3408,12 @@ select.mobile-device {
 .address-item h3{
 	font-size: 28px;
 	font-weight: 600;
-	color: #cdd51f;
+	color: #3BB143;
 }
 
 
 .dmtop.show {
     bottom: 20px;
 }
-
-
 
 

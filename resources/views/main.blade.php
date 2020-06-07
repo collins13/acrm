@@ -10,11 +10,13 @@
                     <div class="col-lg-12">
                         <div class="slider-content-area">
                             <div class="slide-text">
-                                <h1 class="homepage-three-title">Welcome to  <span>ACRM</span> AFRICA FOR CHRIST RADIO MINISTRIES</h1>
-                                <h2>we provide Christ centered free consultancy and guidance services to all Christian organizations and individual Christians who have been called to establish Radio stations for Africa. </h2>
+                                <h1 class="homepage-three-title">Welcome to  <span> AFRICA FOR CHRIST RADIO MINISTRIES</span></h1>
+                                <p style="text-align: justify; color:white">We provide Christ centered free consultancy and guidance services to all Christian organizations and individual Christians who have been called to establish Radio stations in Africa.
+                                will be a witness in sharing  Jesus and to reach millions of God's people with the everlasting Gospel through FM radio& podcasts.</p>
+
                                 <div class="slider-content-btn">
-                                    <a class="btn11" href="{{ route('about') }}">Read More<div class="transition"></div></a>
-                                    <a class="btn11" href="{{ route('contact') }}">Contact<div class="transition"></div></a>
+                                    <a class="btn11" href="{{ route('about') }}">AFRICA FOR CHRIST<div class="transition"></div></a>
+                                    <a class="btn11" href="{{ route('contact') }}">VIDEO<div class="transition"></div></a>
                                 </div>
                             </div>
                         </div>
@@ -28,11 +30,14 @@
                     <div class="col-lg-12">
                         <div class="slider-content-area">
                             <div class="slide-text">
-                                <h1 class="homepage-three-title">Welcome to  <span>ACRM</span> AFRICA FOR CHRIST RADIO MINISTRIES</h1>
-                                <h2>Africa is largely unentered and the large populaon is unreached by the gospel of Christ. </h2>
+                                <h1 class="homepage-three-title">Welcome to  <span> AFRICA FOR CHRIST RADIO MINISTRIES</span></h1>
+                                <p style="text-align: justify; color:white">
+                                    Africa is largely unentered and the large population is unreached by the gospel of Christ. The same population needs soul nurturing through continuous broadcasts and besides the gospel sharing  the population need constant teachings and educational programs through radio broadcasts addressing the issues of  Public health, sound sanitation and hygiene,
+                                </p>
                                 <div class="slider-content-btn">
-                                    <a class="btn11" href="#"><span>Read More</span><div class="transition"></div></a>
-                                    <a class="btn11" href="#"><span>Contact</span><div class="transition"></div></a>
+                                    <a class="btn11" href="{{ route('radio') }}"><span>FM RADIO STATIONS</span><div class="transition"></div></a>
+                                    <a class="btn11" href="{{ route('community') }}"><span>COMMUNITY B. TERMINALS</span><div class="transition"></div></a>
+                                    <a class="btn11" href="{{ route('podcast') }}"><span>PODCAST DEVELOPMENT</span><div class="transition"></div></a>
                                 </div>
                             </div>
                         </div>
@@ -46,11 +51,17 @@
                     <div class="col-lg-12">
                         <div class="slider-content-area">
                             <div class="slide-text">
-                                <h1 class="homepage-three-title">Welcome to  <span>ACRM</span> AFRICA FOR CHRIST RADIO MINISTRIES</h1>
+                                <h1 class="homepage-three-title">Welcome to  <span> AFRICA FOR CHRIST RADIO MINISTRIES</span></h1>
                                 {{-- <h2>Africa is largely unentered and the large populaon is unreached by the gospel of Christ. </h2> --}}
+                                <p style="text-align: justify; color:white">
+                                    We envisage to have 1000+ FM stations for Christ, one FM every region in Africa and one community sound broadcast terminal (SBT) every village.
+We are looking for Christ centered organizations, Christian churches, individual  men and women of high calling who are either ready to establish FM Radio stations in their region for the above mission only, or are ready to establish Sound Broadcast Terminal (SBT) in their region for the above mission only or are ready and willing to support any of the above project either in their village or far away region.
+
+                                </p>
                                 <div class="slider-content-btn">
-                                    <a class="btn11" href="#"><span>Read More</span><div class="transition"></div></a>
-                                    <a class="btn11" href=""><span>Contact</span><div class="transition"></div></a>
+                                    <a class="btn11" href="{{ route('projects') }}"><span>PROJECT APPROVED</span><div class="transition"></div></a>
+                                    <a class="btn11" href="{{ route('projects') }}"><span>NEW PROPOSAL</span><div class="transition"></div></a>
+                                    <a class="btn11" href="{{ route('partnership') }}"><span>PARTNER WITH US</span><div class="transition"></div></a>
                                 </div>
                             </div>
                         </div>
@@ -128,26 +139,31 @@
 
         <div class="owl-services owl-carousel owl-theme">
 
-
-            <div class="service-widget">
-                <div class="post-media wow fadeIn">
-                    <a href="uploads/service_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                    <img src="uploads/service_01.jpg" alt="" class="img-fluid img-rounded">
-                </div>
-                <div class="service-dit">
-                    <h3>Radio Bunia-Congo</h3>
-                    <p>Complete 0%</p>
-                </div>
-                <div class="card-footer bg-transparent border-success">
-                    <a href="#" class="btn btn-sm btn-outline-success btn-block">Fund This Project</a>
-                </div>
-            </div>
+@foreach($projects as $project)
+@if($project->status < 100)
+    
+<div class="service-widget">
+    <div class="post-media wow fadeIn">
+        <a href="/base/uploads/service_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+        <img src="/storage/images/{{ $project->image }}" alt="" class="img-fluid img-rounded">
+    </div>
+    <div class="service-dit">
+        <h3>{{ $project->name }}</h3>
+        <p>Complete {{ $project->status }}%</p>
+    </div>
+    <div class="card-footer bg-transparent border-success">
+        <a href="#" class="btn btn-sm btn-outline-success btn-block">Fund This Project</a>
+    </div>
+</div>
+@endif
+@endforeach
+           
             
 
-            <div class="service-widget">
+            {{-- <div class="service-widget">
                 <div class="post-media wow fadeIn">
-                    <a href="uploads/service_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                    <img src="uploads/service_01.jpg" alt="" class="img-fluid img-rounded">
+                    <a href="/PuzzlePiece2.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                    <img src="/PuzzlePiece2.jpg" alt="" class="img-fluid img-rounded">
                 </div>
                 <div class="service-dit">
                     <h3>Radio Lira-Uganda</h3>
@@ -161,8 +177,8 @@
 
             <div class="service-widget">
                 <div class="post-media wow fadeIn">
-                    <a href="uploads/service_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                    <img src="uploads/service_01.jpg" alt="" class="img-fluid img-rounded">
+                    <a href="/PuzzlePiece2.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                    <img src="/PuzzlePiece2.jpg" alt="" class="img-fluid img-rounded">
                 </div>
                 <div class="service-dit">
                     <h3>RadioKindu-Congo</h3>
@@ -175,8 +191,8 @@
             
             <div class="service-widget">
                 <div class="post-media wow fadeIn">
-                    <a href="uploads/service_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                    <img src="uploads/service_01.jpg" alt="" class="img-fluid img-rounded">
+                    <a href="/PuzzlePiece2.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                    <img src="/PuzzlePiece2.jpg" alt="" class="img-fluid img-rounded">
                 </div>
                 <div class="service-dit">
                     <h3>Podcast Ethiopia</h3>
@@ -185,7 +201,7 @@
                 <div class="card-footer bg-transparent border-success">
                     <a href="#" class="btn btn-sm btn-outline-success btn-block">Fund This Project</a>
                 </div>
-            </div>
+            </div> --}}
             
 
             <!-- end service -->
