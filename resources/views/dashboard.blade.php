@@ -8,7 +8,7 @@
                 <h2 class="text-white pb-4 fw-bold">Dashboard</h2>
                 {{-- <h5 class="text-white op-7 mb-2">Free Bootstrap 4 Admin Dashboard</h5> --}}
             </div>
-        
+
         </div>
     </div>
 </div>
@@ -40,7 +40,7 @@
                         <div class="col-md-4 d-flex flex-column justify-content-around">
                             <div>
                                 <h6 class="fw-bold text-uppercase text-success op-8">Total Income</h6>
-                                <h3 class="fw-bold">$9.782</h3>
+                            <h3 class="fw-bold">$ {{$plans_count}}</h3>
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -53,7 +53,7 @@
             </div>
         </div>
     </div>
-  
+
 </div>
 
 <div class="container">
@@ -84,7 +84,7 @@
 								<th scope="row">{{ $pro->id }}</th>
 								<td>{{ $pro->name }}</td>
 								<td>{{ $pro->email }}</td>
-						
+
 								<td>{{ $pro->amount }}</td>
 							  </tr>
 							@endforeach
@@ -95,6 +95,7 @@
 					<table class="table" id="proposal">
 						<thead>
 						  <tr>
+							<th scope="col">#</th>
 							<th scope="col">Name</th>
 							<th scope="col">Adress</th>
 							<th scope="col">Email</th>
@@ -151,7 +152,7 @@
 			  </div>
 		</div>
 	  </div>
-	
+
 </div>
 @endsection
 

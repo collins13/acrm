@@ -8,13 +8,17 @@ use App\Project;
 use App\Proposal;
 use App\Donate;
 use App\Plan;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ProposeEmail;
 class AdminController extends Controller
 {
     public function dashboard(Request $request)
     {
         $proposals = Proposal::all();
+        $plans_count = Plan::sum('amount');
+        // dd($plans_count);
         $plans = Plan::all();
-        return view('dashboard', compact('proposals', 'plans'));
+        return view('dashboard', compact('proposals', 'plans', 'plans_count'));
     }
 
      public function project(Request $request)
@@ -97,6 +101,12 @@ class AdminController extends Controller
         $proposal->email = $request->email;
         $proposal->message = $request->message;
         $proposal->save();
+
+        $details['name'] = $request->name;
+        $details['email'] = $request->email;
+        $details['mobile'] = $request->m_no;
+        $details['message'] = $request->message;
+        Mail::to('rashid.mkoji@aimsoft.co.ke')->send(new ProposeEmail($details));
         session()->flash("success", "dear ".$request->name." we have received your proposal, we will get back as soon as possible");
         return redirect()->back();
     }
