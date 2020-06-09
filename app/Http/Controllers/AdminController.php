@@ -10,6 +10,7 @@ use App\Donate;
 use App\Plan;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ProposeEmail;
+use App\Video;
 class AdminController extends Controller
 {
     public function dashboard(Request $request)
@@ -151,4 +152,31 @@ class AdminController extends Controller
         $cat->delete($id);
         return response()->json(['status'=>1]);
     }
+    public function video(Request $request)
+    {
+      return view('admin.videos');
+    }
+    public function new_video(Request $request)
+    {
+        if ($request->hasFile('image')) {
+            $fileNameWithExt = $request->file('image')->getClientOriginalName();
+            $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('image')->getClientOriginalExtension();
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            $path = $request->file('image')->storeAs('public/images', $fileNameToStore);
+        }
+
+        $video = Video::find(1);
+        // dd($video);
+        if ($request->hasFile('image')) {
+            $video->name = $fileNameToStore;
+        }
+        $video->save();
+
+        session()->flash("success", "video updated successfully");
+        return redirect()->back();
+
+    }
+
+
 }

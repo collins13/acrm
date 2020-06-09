@@ -45,4 +45,10 @@ Route::post('/new_plan', 'AdminController@new_plan')->name('new_plan');
 Route::get('/edit_plan', 'AdminController@edit_plan')->name('edit_plan');
 Route::post('/update_plan', 'AdminController@update_plan')->name('update_plan');
 Route::post('/delete_plan/{id}', 'AdminController@delete_plan')->name('delete_plan');
+Route::get('/video', 'AdminController@video')->name('video');
+Route::post('/new_video', 'AdminController@new_video')->name('new_video');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

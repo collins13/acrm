@@ -92,7 +92,7 @@ select.form-control + .chosen-container .chosen-results {
     margin-bottom: 5px;
 }
 
-select.form-control + .chosen-container .chosen-results li , 
+select.form-control + .chosen-container .chosen-results li ,
 select.form-control + .chosen-container .chosen-results li.active-result {
     display: block;
     padding: 3px 20px;
@@ -103,7 +103,7 @@ select.form-control + .chosen-container .chosen-results li.active-result {
     white-space: nowrap;
     background-image:none;
 }
-select.form-control + .chosen-container .chosen-results li:hover, 
+select.form-control + .chosen-container .chosen-results li:hover,
 select.form-control + .chosen-container .chosen-results li.active-result:hover,
 select.form-control + .chosen-container .chosen-results li.highlighted
 {
@@ -183,7 +183,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 		<div class="main-header">
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="blue">
-				
+
 				<a href="index.html" class="logo">
 					{{-- <img src="/base/assets/img/logo.svg" alt="navbar brand" class="navbar-brand"> --}}
 					<h1>Dashbord</h1>
@@ -204,7 +204,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 
 			<!-- Navbar Header -->
 			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
-				
+
 				<div class="container-fluid">
 					<div class="collapse" id="search-nav">
 						<form class="navbar-left navbar-form nav-search mr-md-3">
@@ -231,7 +231,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 							<ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
 								<li>
 									<div class="dropdown-title d-flex justify-content-between align-items-center">
-										Messages 									
+										Messages
 										<a href="#" class="small">Mark all as read</a>
 									</div>
 								</li>
@@ -239,7 +239,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 									<div class="message-notif-scroll scrollbar-outer">
 										<div class="notif-center">
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="/base/assets/img/jm_denis.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -247,11 +247,11 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 													<span class="block">
 														How are you ?
 													</span>
-													<span class="time">5 minutes ago</span> 
+													<span class="time">5 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="/base/assets/img/chadengle.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -259,11 +259,11 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 													<span class="block">
 														Ok, Thanks !
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="/base/assets/img/mlane.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -271,11 +271,11 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 													<span class="block">
 														Ready for the meeting today...
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="/base/assets/img/talha.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
@@ -283,7 +283,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 													<span class="block">
 														Hi, Apa Kabar ?
 													</span>
-													<span class="time">17 minutes ago</span> 
+													<span class="time">17 minutes ago</span>
 												</div>
 											</a>
 										</div>
@@ -312,7 +312,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 													<span class="block">
 														New user registered
 													</span>
-													<span class="time">5 minutes ago</span> 
+													<span class="time">5 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
@@ -321,18 +321,18 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 													<span class="block">
 														Rahmad commented on Admin
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
-												<div class="notif-img"> 
+												<div class="notif-img">
 													<img src="/base/assets/img/profile2.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
 													<span class="block">
 														Reza send messages to you
 													</span>
-													<span class="time">12 minutes ago</span> 
+													<span class="time">12 minutes ago</span>
 												</div>
 											</a>
 											<a href="#">
@@ -341,7 +341,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 													<span class="block">
 														Farrah liked Admin
 													</span>
-													<span class="time">17 minutes ago</span> 
+													<span class="time">17 minutes ago</span>
 												</div>
 											</a>
 										</div>
@@ -442,7 +442,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 		</div>
 
 		<!-- Sidebar -->
-		<div class="sidebar sidebar-style-2">			
+		<div class="sidebar sidebar-style-2">
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
 					<div class="user">
@@ -481,7 +481,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 						</div>
 					</div>
 					<ul class="nav nav-primary">
-					
+
 						<li class="nav-section">
 							<span class="sidebar-mini-icon">
 								<i class="fa fa-ellipsis-h"></i>
@@ -511,8 +511,8 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 											<span class="sub-item">permission</span>
 										</a>
 									</li>
-									
-								
+
+
 								</ul>
 							</div>
 						</li>
@@ -529,7 +529,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 											<span class="sub-item">All Plans</span>
 										</a>
 									</li>
-									
+
 								</ul>
 							</div>
 						</li>
@@ -563,7 +563,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 											<span class="sub-item">All Contacts</span>
 										</a>
 									</li>
-									
+
 								</ul>
 							</div>
 						</li>
@@ -581,7 +581,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 											<span class="sub-item">All Projects</span>
 										</a>
 									</li>
-									
+
 								</ul>
 							</div>
 						</li>
@@ -594,15 +594,15 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 							<div class="collapse" id="event">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="sidebar-style-1.html">
+                                    <a href="{{route('video')}}">
 											<span class="sub-item">Upload Video</span>
 										</a>
 									</li>
-									
+
 								</ul>
 							</div>
 						</li>
-						
+
 						<li class="nav-item">
 							<a href="widgets.html">
 								<i class="fa fa-cog"></i>
@@ -619,13 +619,13 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 		<div class="main-panel">
 			<div class="content">
 				@yield('content')
-			
+
 			</div>
 			<footer class="footer">
 				<div class="container-fluid">
 					<nav class="pull-left">
 						<ul class="nav">
-						
+
 							<li class="nav-item">
 								<a class="nav-link" href="{{ url('/') }}">
 									Visit site
@@ -635,11 +635,11 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 					</nav>
 					<div class="copyright ml-auto">
 						2020, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.themekita.com">Rashid</a>
-					</div>				
+					</div>
 				</div>
 			</footer>
 		</div>
-		
+
 		<!-- Custom template | don't include it in your project! -->
 		<div class="custom-template">
 			<div class="title">Settings</div>
@@ -755,7 +755,7 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 	<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
     {{-- <script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script> --}}
-	
+
 	{{-- <script src="/base/assets/js/demo.js"></script> --}}
 
 	<script>
