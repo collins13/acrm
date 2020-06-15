@@ -7,11 +7,14 @@ use Session;
 use App\Project;
 use App\Donate;
 use App\Plan;
+use App\Contact;
+use App\Video;
 class pagesController extends Controller
 {
     public function about()
     {
-        return view('pages.about');
+        $video = Video::find(1);
+        return view('pages.about', compact('video'));
     }
 
     public function services()

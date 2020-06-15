@@ -1,5 +1,7 @@
 <?php
 use App\Project;
+use App\Contact;
+use App\Video;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +15,9 @@ use App\Project;
 
 Route::get('/', function () {
     $projects = Project::all();
-    return view('main', compact('projects'));
+    $contact = Contact::find(1);
+    $video = Video::find(1);
+    return view('main', compact('projects', 'contact', 'video'));
 });
 
 Route::get('/main', function () {
@@ -33,22 +37,45 @@ Route::post('/charge', 'pagesController@charge')->name('charge');
 
 // backend routes
 
-Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
-Route::get('/project', 'AdminController@project')->name('project');
-Route::post('/new_proj', 'AdminController@new_proj')->name('new_proj');
-Route::get('/edit', 'AdminController@edit')->name('edit');
-Route::post('/update', 'AdminController@update')->name('update');
-Route::post('/delete/{id}', 'AdminController@delete')->name('delete');
-Route::post('/proposal', 'AdminController@proposal')->name('proposal');
-Route::get('/plans', 'AdminController@plans')->name('plans');
+Route::group(['prefix'=>'acrm','middleware' => 'auth'], function() {
+    Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
+    Route::get('/project', 'AdminController@project')->name('project');
+    Route::post('/new_proj', 'AdminController@new_proj')->name('new_proj');
+    Route::get('/edit', 'AdminController@edit')->name('edit');
+    Route::post('/update', 'AdminController@update')->name('update');
+    Route::post('/delete/{id}', 'AdminController@delete')->name('delete');
+    Route::get('/plans', 'AdminController@plans')->name('plans');
 Route::post('/new_plan', 'AdminController@new_plan')->name('new_plan');
 Route::get('/edit_plan', 'AdminController@edit_plan')->name('edit_plan');
 Route::post('/update_plan', 'AdminController@update_plan')->name('update_plan');
 Route::post('/delete_plan/{id}', 'AdminController@delete_plan')->name('delete_plan');
 Route::get('/video', 'AdminController@video')->name('video');
 Route::post('/new_video', 'AdminController@new_video')->name('new_video');
+Route::get('/user', 'AdminController@user')->name('user');
+Route::post('/new_user', 'AdminController@new_user')->name('new_user');
+Route::post('/delete_user/{id}', 'AdminController@delete_user')->name('delete_user');
+Route::get('/contact_details', 'AdminController@contact_details')->name('contact_details');
+Route::post('/update_contact', 'AdminController@update_contact')->name('update_contact');
+Route::get('/edit_contact', 'AdminController@edit_contact')->name('edit_contact');
+});
+
+Route::post('/proposal', 'AdminController@proposal')->name('proposal');
+
+Route::post('/call', 'AdminController@call')->name('call');
+Route::post('/prayer', 'AdminController@prayer')->name('prayer');
+Route::post('payment', 'PayPalController@payment')->name('payment');
+Route::post('/new_partnership', 'AdminController@new_partnership')->name('new_partnership');
+
+Route::get('cancel', 'PayPalController@cancel')->name('payment.cancel');
+
+Route::get('payment/success', 'PayPalController@success')->name('payment.success');
 
 
-Auth::routes();
+Auth::routes([
+    'register' => false, // Registration Routes...
+    'reset' => false, // Password Reset Routes...
+    'verify' => false, // Email Verification Routes...
+  ]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+

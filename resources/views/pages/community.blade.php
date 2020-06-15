@@ -73,6 +73,7 @@ The local stakeholder are responsible for the terminal.</p>
 </div>
 
 <!-- Button trigger modal -->
+<!-- Button trigger modal -->
 
   <!-- Modal -->
   <div class="modal fade" id="checkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -85,32 +86,34 @@ The local stakeholder are responsible for the terminal.</p>
           </button>
         </div>
         <div class="modal-body">
-          <form action="">
+          <form action="{{ route('prayer') }}" method="POST" >
+            @csrf
               <div class="row">
                   <div class="col-md-6">
                       <label for="name">Full Name</label>
-                      <input type="text" name="name" id="name" class="form-control">
+                      <input type="text" name="name" id="name" class="form-control" required>
                   </div>
 
                   <div class="col-md-6">
                     <label for="name">Email</label>
-                    <input type="email" name="email" id="email" class="form-control">
+                    <input type="email" name="email" id="email" class="form-control" required>
                 </div>
               </div>
               <br>
               <div class="row">
                   <div class="col-md-12">
                     <label for="parayer">Prayer</label>
-                    <textarea name="desc" id="desc" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" required class="form-control"></textarea>
                   </div>
                   
               </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
           </form>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Submit</button>
-        </div>
+      
       </div>
     </div>
   </div>

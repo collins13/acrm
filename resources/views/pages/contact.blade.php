@@ -1,3 +1,4 @@
+<?php $contact = App\Contact::find(1); ?>
 @extends('layout')
 
 @section('content')
@@ -28,25 +29,26 @@
 		<div class="col-md-8 offset-md-2">
 			<div class="contact_form">
 				<div id="message"></div>
-				<form id="contactform" class="row" action="contact.php" name="contactform" method="post">
+				<form action="{{ route('call') }}" method="post">
+					@csrf
 					<div class="row">
 						<div class="col-md-6 col-sm-6">
-							<input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name">
+							<input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name" required>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6">
-							<input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name">
+							<input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name" required>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6">
-							<input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
+							<input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-6">
-							<input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone">
+							<input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone" required>
 						</div>
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Give us more details.."></textarea>
+							<textarea class="form-control" name="comments" id="comments" rows="6" required placeholder="Give us more details.."></textarea>
 						</div>
 						<div class="text-center cont-btn">
-							<button type="submit" value="SEND" id="submit" class="btn11"><span>Submit</span></button>
+							<button type="submit" class="btn btn-success"><span>Submit</span></button>
 						</div>
 					</div>
 				</form>

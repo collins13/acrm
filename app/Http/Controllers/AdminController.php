@@ -11,15 +11,30 @@ use App\Plan;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ProposeEmail;
 use App\Video;
+use App\Mail\UserEmail;
+use App\User;
+use DB;
+use App\Contact;
+use App\Mail\ContactUs;
+use Illuminate\Support\Facades\Hash;
+use App\Prayer;
+use App\Mail\UserPrayer;
+use App\Partner;
+use App\Mail\PartnerMail;
 class AdminController extends Controller
 {
+
+    public function __construct(){
+        // $this->middleware('auth');
+    }
     public function dashboard(Request $request)
     {
         $proposals = Proposal::all();
         $plans_count = Plan::sum('amount');
+        $prayers = Prayer::all();
         // dd($plans_count);
         $plans = Plan::all();
-        return view('dashboard', compact('proposals', 'plans', 'plans_count'));
+        return view('dashboard', compact('proposals', 'plans', 'plans_count', 'prayers'));
     }
 
      public function project(Request $request)
@@ -154,23 +169,22 @@ class AdminController extends Controller
     }
     public function video(Request $request)
     {
-      return view('admin.videos');
+        $video = Video::find(1);
+      return view('admin.videos', compact('video'));
     }
     public function new_video(Request $request)
     {
-        if ($request->hasFile('image')) {
-            $fileNameWithExt = $request->file('image')->getClientOriginalName();
+        if ($request->hasFile('edit_image')) {
+            $fileNameWithExt = $request->file('edit_image')->getClientOriginalName();
             $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
-            $extension = $request->file('image')->getClientOriginalExtension();
+            $extension = $request->file('edit_image')->getClientOriginalExtension();
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('image')->storeAs('public/images', $fileNameToStore);
+            $path = $request->file('edit_image')->storeAs('public/images', $fileNameToStore);
         }
 
         $video = Video::find(1);
-        // dd($video);
-        if ($request->hasFile('image')) {
+        // dd($fileNameToStore);
             $video->name = $fileNameToStore;
-        }
         $video->save();
 
         session()->flash("success", "video updated successfully");
@@ -178,5 +192,128 @@ class AdminController extends Controller
 
     }
 
+    public function user(Request $request)
+    {
+        $users = User::all();
+        return view('admin.users', compact('users'));
+    }
 
+    public function new_user(Request $request)
+    {
+        DB::beginTransaction();
+        try {
+            $digits = 4;
+            $pass = rand(pow(10, $digits-1), pow(10, $digits)-1);
+            $password = Hash::make($pass);
+            // dd($password);
+
+            $info = [
+                'name'=>$request->name,
+                'password'=>$pass,
+                'email'=>$request->email
+            ];
+            \Mail::to($info['email'])->send(new UserEmail($info));
+
+            $user = User::create(['name'=>$request->name, 'email'=>$request->email, 'password'=>$password]);
+
+            DB::commit();
+    
+            Session::flash("success", "user created successfuly");
+            return redirect()->back();
+        } catch (\Exception $e) {
+            DB::rollback();
+            dd($e);
+        }
+    }
+
+    public function delete_user(Request $request, $id)
+    {
+        $user = User::find($id);
+        $user->delete($id);
+
+        return response()->json(['status'=>1]);
+    }
+
+
+    public function contact_details(Request $request)
+    {
+        $contacts = Contact::all();
+        return view('admin.contact', compact('contacts'));
+    }
+
+    public function update_contact(Request $request)
+    {
+        $update = Contact::find(1);
+        $update->name1 = $request->name;
+        $update->name2 = $request->name2;
+        $update->name3 = $request->name3;
+        $update->email1 = $request->email;
+        $update->email2 = $request->email2;
+        $update->email3 = $request->email3;
+        $update->phone1 = $request->mobile;
+        $update->phone2 = $request->mobile2;
+        $update->phone3 = $request->mobile3;
+        $update->save();
+
+        session()->flash("success", "contact details updated");
+        return redirect()->back();
+    }
+
+    public function edit_contact(Request $request)
+    {
+        $edit = Contact::find(1);
+        return response()->json(['edit'=>$edit]);
+    }
+public function call(Request $request)
+{
+    $callus['name'] =  $request->first_name.' '.$request->last_name;
+    $callus['email'] = $request->email;
+    $callus['phone'] = $request->phone;
+    $callus['comments'] = $request->comments;
+    Mail::to('rashid.mkoji@aimsoft.co.ke')->send(new ContactUs($callus));
+
+    session()->flash("success", "thank you ".$callus['name']." for contacting us God Bless you");
+    return redirect()->back();
+}
+
+public function prayer(Request $request)
+{
+    $prayer['name'] = $request->name;
+    $prayer['email'] = $request->email;
+    $prayer['message'] = $request->message;
+
+    $prayer1 =  New Prayer();
+    $prayer1->name = $request->name;
+    $prayer1->email = $request->email;
+    $prayer1->message = $request->message;
+    $prayer1->save();
+
+    Mail::to('rashid.mkoji@aimsoft.co.ke')->send(new UserPrayer($prayer));
+
+    session()->flash("success", "thank you ".$prayer['name']." for your prayers God Bless you");
+    return redirect()->back();
+}
+
+public function new_partnership(Request $request)
+{
+    $partner = new Partner();
+    $partner->name = $request->name;
+    $partner->org = $request->name_org;
+    $partner->adress = $request->p_adress;
+    $partner->telephone = $request->t_no;
+    $partner->mobile = $request->m_no;
+    $partner->city = $request->town;
+    $partner->country = $request->country;
+    $partner->email = $request->email;
+    $partner->message = $request->message;
+    $partner->save();
+
+    $details['name'] = $request->name;
+    $details['email'] = $request->email;
+    $details['mobile'] = $request->m_no;
+    $details['message'] = $request->message;
+    Mail::to('rashid.mkoji@aimsoft.co.ke')->send(new PartnerMail($details));
+    session()->flash("success", "dear ".$request->name. "  we have received your partnership request, we will get back as soon as possible");
+    return redirect()->back();
+}
 }

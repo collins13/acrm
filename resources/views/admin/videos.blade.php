@@ -17,7 +17,7 @@
     <div class="col-md-6">
         <div class="post-media wow fadeIn">
             <video width="800" height="500" controls autoplay>
-                <source src="/Video Sample.mp4" type="video/mp4">
+                <source src="/storage/images/{{ $video->name }}" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
               </video>
         </div><!-- end media -->
@@ -41,7 +41,7 @@
               <div class="row">
                   <div class="col-md-6">
                       <label for="name">Plan Name</label>
-                      <input type="file" name="file" id="file" class="form-control" required>
+                      <input type="file" name="edit_image" id="edit_image" class="form-control" required>
                   </div>
 
               </div><br>

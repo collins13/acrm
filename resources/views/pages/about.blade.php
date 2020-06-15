@@ -43,7 +43,7 @@
 			<div class="col-md-6">
 				<div class="post-media wow fadeIn">
 					<video width="500" height="600" controls>
-						<source src="/Video Sample.mp4" type="video/mp4">
+						<source src="/storage/images/{{ $video->name }}" type="video/mp4">
 						<source src="movie.ogg" type="video/ogg">
 					  </video>
 				</div><!-- end media -->

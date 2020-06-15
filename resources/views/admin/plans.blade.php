@@ -32,7 +32,7 @@
                 @foreach($plans as $plan)
                     <tr>
                         <td>{{ $plan->id }}</td>
-                        <td>{{ $plan->title }}</td>
+                        <td>{{ $plan->name }}</td>
                         <td>{{ $plan->amount }}</td>
                         <td>
                             <a href="#" class="btn btn-info edit btn-sm" data-id="{{ $plan->id }}"> <i class="fa fa-pencil">Edit</i> </a>
@@ -141,7 +141,7 @@
                 success:function(res){
                     var data = res.edit;
 
-                    $("#editname").val(data.title)
+                    $("#editname").val(data.name)
                     $("#editamount").val(data.amount)
                     $("#id").val(data.id)
                 },

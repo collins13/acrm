@@ -59,67 +59,116 @@
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Payment Method</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-		<nav>
-			<div class="nav nav-tabs" id="nav-tab" role="tablist">
-			  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> <i class="fa fa-id-card"> Card Payment</i> </a>
-			  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> <i class="fa fa-paypal"></i> PayPal</a>
-			  {{-- <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a> --}}
-			</div>
-		  </nav>
-		  <div class="tab-content" id="nav-tabContent">
-			<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-				<form class="needs-validation" novalidate id="payment-form" method="POST" action="{{ route('charge') }}">
-					@csrf
-							<div class="mb-3">
-							  <label for="username">Full Name</label>
-							  <input type="text" name="name" class="form-control" required >
-							</div>
-					
-							<div class="mb-3">
-							  <label for="email">Email <span class="text-muted"></span></label>
-							  <input type="email" class="form-control" id="email" name="email" required placeholder="you@example.com" required>
-							</div>
 
-							<div class="mb-3">
-								<label for="amount">Amount Donating <span class="text-muted"></span></label>
-								<input type="text" class="form-control amont" id="amont" name="amont" required placeholder="you@example.com" required>
+  <!-- Modal -->
+  <div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Payment Method</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <nav>
+			  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"> <i class="fa fa-id-card"> Card Payment</i> </a>
+				<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> <i class="fa fa-paypal"></i> PayPal</a>
+				{{-- <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a> --}}
+			  </div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				  <form class="needs-validation" novalidate id="payment-form" method="POST" action="{{ route('charge') }}">
+					  @csrf
+							  <div class="mb-3">
+								<label for="username">Full Name</label>
+								<input type="text" name="name" class="form-control" required >
 							  </div>
-								<br>
-						 
-							<div id="card-element">
-							  <!-- Elements will create input elements here -->
-							</div>
-						  
-							<!-- We'll put the error messages in this element -->
-							<div id="card-errors" role="alert"></div>
-						  
-							<!-- <button id="submit">Pay</button> -->
-							<hr class="mb-4">
-							<button type="submit" class="btn btn-primary btn-lg btn-block" type="submit">Continue </button>
-						  </form>
+					  
+							  <div class="mb-3">
+								<label for="email">Email <span class="text-muted"></span></label>
+								<input type="email" class="form-control" id="email" name="email" required placeholder="you@example.com" required>
+							  </div>
+  
+							  <div class="mb-3">
+								  <label for="amount">Amount Donating <span class="text-muted"></span></label>
+								  <input type="text" class="form-control amont" id="amont" name="amont" required placeholder="eg, $100" required>
+								</div>
+								  <br>
+						   
+							  <div id="card-element">
+								<!-- Elements will create input elements here -->
+							  </div>
+							
+							  <!-- We'll put the error messages in this element -->
+							  <div id="card-errors" role="alert"></div>
+							
+							  <!-- <button id="submit">Pay</button> -->
+							  <hr class="mb-4">
+							  <button type="submit" class="btn btn-primary btn-lg btn-block" type="submit">Continue </button>
+							</form>
+			  </div>
+			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+		  <style>
+			.content {
+  
+  margin-top: 5px;
+  
+  text-align: center;
+  
+  }
+		  </style>
+		  <div class="flex-center position-ref full-height">
+  
+	
+  
+			<div class="content">
+  
+				<h1></h1>
+  
+				  
+  
+				<table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/in/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/in/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" border="0" alt="PayPal Logo"></a></td></tr></table>
+  
+  
+  
+				{{-- <a href="{{ route('payment') }}" class="btn btn-success">Pay $100 from Paypal</a> --}}
+  
 			</div>
-			<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-			<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-		  </div>
-      </div>
-      <div class="modal-footer">
-        {{-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button> --}}
-      </div>
-    </div>
+			<form action="{{ route('payment') }}" method="POST">
+			  @csrf
+			  <div class="mb-3">
+				<label for="username">Full Name</label>
+				<input type="text" name="name" class="form-control" required >
+			  </div>
+			
+			  <div class="mb-3">
+				<label for="email">Email <span class="text-muted"></span></label>
+				<input type="email" class="form-control" id="email" name="email" required placeholder="you@example.com" required>
+			  </div>
+			
+			  <div class="mb-3">
+				<label for="amount">Amount Donating <span class="text-muted"></span></label>
+				<input type="text" class="form-control amont" id="amont" name="amont" required placeholder="eg, $100" required>
+				</div>
+				<br>
+				<button type="submit" class="btn btn-success">Pay from Paypal</button>
+			</form>
+  
+		</div>
+		</div>
+			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+		  {{-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button> --}}
+		</div>
+	  </div>
+	</div>
   </div>
-</div>
 
 <!-- Button trigger modal -->
   

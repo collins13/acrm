@@ -18,9 +18,9 @@
     <div class="container">
 
     </div>
-    <h1>From: {{$details['email']}}</h1>
-    <h1>No: {{$details['name']}}</h1>
-    <h1>Mobile No: {{$details['mobile']}}</h1>
+    <h3>From: {{$details['email']}}</h3>
+    <h3>Name: {{$details['name']}}</h3>
+    <h3>Mobile No: {{$details['mobile']}}</h3>
 <p>{{ $details['message']}}</p>
 </body>
 </html>

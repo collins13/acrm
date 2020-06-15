@@ -1,3 +1,4 @@
+<?php $contact = App\Contact::find(1); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,10 +71,10 @@
 				<div class="col-md-6 col-sm-6">
 					<div class="left-top">
 						<div class="email-box">
-							<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> mogusu@gmail.com</a>
+							<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{ $contact->email1 ? $contact->email1 : "test" }}</a>
 						</div>
 						<div class="phone-box">
-							<a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> +254 722 508899</a>
+							<a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> {{ $contact->phone1 ? $contact->phone1 : "" }}</a>
 						</div>
 					</div>
 				</div>
@@ -127,6 +128,7 @@
 							<li><a href="{{ route('projects') }}">Projects <span class="icon icon-arrow-right2"></span></a></li>
 							<li><a href="{{ route('partnership') }}">Partnership <span class="icon icon-arrow-right2"></span></a></li>
 							<li><a href="{{ route('contact') }}">Contact <span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="{{ route('dashboard') }}">Admin <span class="icon icon-arrow-right2"></span></a></li>
                         </ul><!-- end links -->
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
@@ -139,9 +141,17 @@
                         </div>
 						
 						<ul>
-							<li>Enoch Mogusu</li>
-							<li>Phone: <a href="#">+254 722 508899  </a></li>
-							<li>Email: <a href="#">mogusu@gmail.com </a></li>
+							<li>President: {{ $contact->name1 ? $contact->name1 : "" }}</li>
+							<li>Phone: <a href="#">{{ $contact['phone1'] ? $contact['phone1'] : "" }}  </a></li>
+                            <li>Email: <a href="#">{{ $contact->email1 ? $contact->email1 :"" }} </a></li>
+                            <br>
+                            <li>Vice President: {{ $contact->name2 ? $contact->name2 : "" }}</li>
+							<li>Phone: <a href="#">{{ $contact['phone2'] ? $contact['phone2'] : "" }}  </a></li>
+                            <li>Email: <a href="#">{{ $contact->email2 ? $contact->email2 : "" }} </a></li>
+                            <br>
+                            <li>Techical Director: {{ $contact->name2 ? $contact->name2 : "" }}</li>
+							<li>Phone: <a href="#">{{ $contact['phone3'] ? $contact['phone3'] : ""}}  </a></li>
+							<li>Email: <a href="#">{{ $contact->email3 ? $contact->email3 : "" }} </a></li>
 						</ul>
 						
 					</div>
