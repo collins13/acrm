@@ -32,7 +32,7 @@
                 @foreach($plans as $plan)
                     <tr>
                         <td>{{ $plan->id }}</td>
-                        <td>{{ $plan->name }}</td>
+                        <td>{{ $plan->title }}</td>
                         <td>{{ $plan->amount }}</td>
                         <td>
                             <a href="#" class="btn btn-info edit btn-sm" data-id="{{ $plan->id }}"> <i class="fa fa-pencil">Edit</i> </a>
