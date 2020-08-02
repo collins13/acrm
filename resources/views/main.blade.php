@@ -26,8 +26,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-4 col-xs-4" style="margin-top: 20px;">
+                    </div><br>
+                    <div class="col-lg-8 col-md-8" style="margin-top: 20px;">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner" style=" z-index: 1; margin-top: 20px;">
                                 <div class="carousel-item active">
