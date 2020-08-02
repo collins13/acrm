@@ -119,7 +119,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3">
-                        <div class="slider-content-area" style="overflow-y: auto;">
+                        <div class="slider-content-area">
                             <div class="slide-text" style="margin-top:40px;">
                                 <h1 class="homepage-three-title">Welcome to <span> AFRICA FOR CHRIST FM RADIO
                                         PROJECTS</span></h1>
