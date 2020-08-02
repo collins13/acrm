@@ -30,7 +30,7 @@
 <div class="row">
   @foreach($projects as $project)
   @if($project->status >= 100)
-  <div class="col-md-4">
+  <div class="col-md-4 mb-3">
     <div class="service-widget">
         <div class="post-media wow fadeIn">
             <a href="/PuzzlePiece2.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
