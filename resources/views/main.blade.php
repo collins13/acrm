@@ -27,7 +27,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-4 col-xs-4" style="margin-top: 25px;">
+                    <div class="col-lg-8 col-md-8 col-sm-4 col-xs-4" style="margin-top: 30px;">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner" style=" z-index: 1;">
                                 <div class="carousel-item active">
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-4 col-xs-4" style="margin-top: 25px;">
+                    <div class="col-lg-8 col-md-8 col-sm-4 col-xs-4" style="margin-top: 35px;">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner" style=" z-index: 1;">
                                 <div class="carousel-item active">
@@ -120,7 +120,7 @@
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3">
                         <div class="slider-content-area">
-                            <div class="slide-text" style="margin-top:40px;">
+                            <div class="slide-text" style="margin-top:60px;">
                                 <h1 class="homepage-three-title">Welcome to <span> AFRICA FOR CHRIST FM RADIO
                                         PROJECTS</span></h1>
                                 {{-- <h2>Africa is largely unentered and the large populaon is unreached by the gospel of Christ. </h2> --}}
@@ -151,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-md-7 col-sm-4 col-xs-4" style="margin-top: 25px;">
+                    <div class="col-lg-7 col-md-7 col-sm-4 col-xs-4" style="margin-top: 70px;">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner" style=" z-index: 1;">
                                 <div class="carousel-item active">
