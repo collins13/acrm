@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
                         <div class="slider-content-area">
-                            <div class="slide-text">
+                            <div class="slide-text" style="margin-top:20px;">
                                 <h1 class="homepage-three-title">Welcome to <span> AFRICA FOR CHRIST FM RADIO
                                         PROJECTS</span></h1>
                                 <p style="text-align: justify; color:white">We provide Christ centered free consultancy
