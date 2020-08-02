@@ -21,6 +21,9 @@ use App\Prayer;
 use App\Mail\UserPrayer;
 use App\Partner;
 use App\Mail\PartnerMail;
+use App\Slider1;
+use App\Slider2;
+use App\Slider3;
 class AdminController extends Controller
 {
 
@@ -314,6 +317,194 @@ public function new_partnership(Request $request)
     $details['message'] = $request->message;
     Mail::to('rashid.mkoji@aimsoft.co.ke')->send(new PartnerMail($details));
     session()->flash("success", "dear ".$request->name. "  we have received your partnership request, we will get back as soon as possible");
+    return redirect()->back();
+}
+
+public function slider(Request $request)
+{
+    $sliders1 = Slider1::all();
+    $sliders2 = Slider2::all();
+    $sliders3 = Slider3::all();
+    return view('admin.slider', compact('sliders1', 'sliders2', 'sliders3'));
+}
+
+public function add_slider(Request $request)
+{
+    $slider = Slider1::find(1);
+    if ($request->hasFile('image1')) {
+        $fileNameWithExt1 = $request->file('image1')->getClientOriginalName();
+        $filename1 = pathinfo($fileNameWithExt1, PATHINFO_FILENAME);
+        $extension1 = $request->file('image1')->getClientOriginalExtension();
+        $fileNameToStore1 = $filename1 . '_' . time() . '.' . $extension1;
+        $path1 = $request->file('image1')->storeAs('public/slider', $fileNameToStore1);
+    } 
+    if ($request->hasFile('image1')) {
+        $slider->image1 = $fileNameToStore1;
+    }
+    if ($request->hasFile('image2')) {
+        $fileNameWithExt2 = $request->file('image2')->getClientOriginalName();
+        $filename2 = pathinfo($fileNameWithExt2, PATHINFO_FILENAME);
+        $extension2 = $request->file('image2')->getClientOriginalExtension();
+        $fileNameToStore2 = $filename2 . '_' . time() . '.' . $extension2;
+        $path2 = $request->file('image2')->storeAs('public/slider', $fileNameToStore2);
+    } 
+    if ($request->hasFile('image2')) {
+        $slider->image2 = $fileNameToStore2;
+    }
+
+    if ($request->hasFile('image3')) {
+        $fileNameWithExt3 = $request->file('image3')->getClientOriginalName();
+        $filename3 = pathinfo($fileNameWithExt3, PATHINFO_FILENAME);
+        $extension3 = $request->file('image3')->getClientOriginalExtension();
+        $fileNameToStore3 = $filename3 . '_' . time() . '.' . $extension3;
+        $path3 = $request->file('image3')->storeAs('public/slider', $fileNameToStore3);
+    } 
+    if ($request->hasFile('image3')) {
+        $slider->image3 = $fileNameToStore3;
+    }
+
+
+
+
+    if ($request->hasFile('edit_image')) {
+        $fileNameWithExt = $request->file('edit_image')->getClientOriginalName();
+        $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+        $extension = $request->file('edit_image')->getClientOriginalExtension();
+        $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+        $path = $request->file('edit_image')->storeAs('public/images/food/food-menu', $fileNameToStore);
+    }
+    if ($request->hasFile('edit_image')) {
+        $slider->image3 = $fileNameToStore3;
+    }
+
+
+
+    // $slider = new Slider1();
+    // $slider->image1 = $fileNameToStore1;
+    // $slider->image2 = $fileNameToStore2;
+    // $slider->image3 = $fileNameToStore3;
+    $slider->save();
+    session()->flash("success", "uploaded successfully");
+    return redirect()->back();
+}
+
+public function add_slider2(Request $request)
+{
+    $slider = Slider2::find(1);
+    if ($request->hasFile('image1')) {
+        $fileNameWithExt1 = $request->file('image1')->getClientOriginalName();
+        $filename1 = pathinfo($fileNameWithExt1, PATHINFO_FILENAME);
+        $extension1 = $request->file('image1')->getClientOriginalExtension();
+        $fileNameToStore1 = $filename1 . '_' . time() . '.' . $extension1;
+        $path1 = $request->file('image1')->storeAs('public/slider', $fileNameToStore1);
+    } 
+    if ($request->hasFile('image1')) {
+        $slider->image1 = $fileNameToStore1;
+    }
+    if ($request->hasFile('image2')) {
+        $fileNameWithExt2 = $request->file('image2')->getClientOriginalName();
+        $filename2 = pathinfo($fileNameWithExt2, PATHINFO_FILENAME);
+        $extension2 = $request->file('image2')->getClientOriginalExtension();
+        $fileNameToStore2 = $filename2 . '_' . time() . '.' . $extension2;
+        $path2 = $request->file('image2')->storeAs('public/slider', $fileNameToStore2);
+    } 
+    if ($request->hasFile('image2')) {
+        $slider->image2 = $fileNameToStore2;
+    }
+
+    if ($request->hasFile('image3')) {
+        $fileNameWithExt3 = $request->file('image3')->getClientOriginalName();
+        $filename3 = pathinfo($fileNameWithExt3, PATHINFO_FILENAME);
+        $extension3 = $request->file('image3')->getClientOriginalExtension();
+        $fileNameToStore3 = $filename3 . '_' . time() . '.' . $extension3;
+        $path3 = $request->file('image3')->storeAs('public/slider', $fileNameToStore3);
+    } 
+    if ($request->hasFile('image3')) {
+        $slider->image3 = $fileNameToStore3;
+    }
+
+
+
+
+    if ($request->hasFile('edit_image')) {
+        $fileNameWithExt = $request->file('edit_image')->getClientOriginalName();
+        $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+        $extension = $request->file('edit_image')->getClientOriginalExtension();
+        $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+        $path = $request->file('edit_image')->storeAs('public/images/food/food-menu', $fileNameToStore);
+    }
+    if ($request->hasFile('edit_image')) {
+        $slider->image3 = $fileNameToStore3;
+    }
+
+
+
+    // $slider = new Slider1();
+    // $slider->image1 = $fileNameToStore1;
+    // $slider->image2 = $fileNameToStore2;
+    // $slider->image3 = $fileNameToStore3;
+    $slider->save();
+    session()->flash("success", "uploaded successfully");
+    return redirect()->back();
+}
+
+public function add_slider3(Request $request)
+{
+    $slider = Slider3::find(1);
+    if ($request->hasFile('image1')) {
+        $fileNameWithExt1 = $request->file('image1')->getClientOriginalName();
+        $filename1 = pathinfo($fileNameWithExt1, PATHINFO_FILENAME);
+        $extension1 = $request->file('image1')->getClientOriginalExtension();
+        $fileNameToStore1 = $filename1 . '_' . time() . '.' . $extension1;
+        $path1 = $request->file('image1')->storeAs('public/slider', $fileNameToStore1);
+    } 
+    if ($request->hasFile('image1')) {
+        $slider->image1 = $fileNameToStore1;
+    }
+    if ($request->hasFile('image2')) {
+        $fileNameWithExt2 = $request->file('image2')->getClientOriginalName();
+        $filename2 = pathinfo($fileNameWithExt2, PATHINFO_FILENAME);
+        $extension2 = $request->file('image2')->getClientOriginalExtension();
+        $fileNameToStore2 = $filename2 . '_' . time() . '.' . $extension2;
+        $path2 = $request->file('image2')->storeAs('public/slider', $fileNameToStore2);
+    } 
+    if ($request->hasFile('image2')) {
+        $slider->image2 = $fileNameToStore2;
+    }
+
+    if ($request->hasFile('image3')) {
+        $fileNameWithExt3 = $request->file('image3')->getClientOriginalName();
+        $filename3 = pathinfo($fileNameWithExt3, PATHINFO_FILENAME);
+        $extension3 = $request->file('image3')->getClientOriginalExtension();
+        $fileNameToStore3 = $filename3 . '_' . time() . '.' . $extension3;
+        $path3 = $request->file('image3')->storeAs('public/slider', $fileNameToStore3);
+    } 
+    if ($request->hasFile('image3')) {
+        $slider->image3 = $fileNameToStore3;
+    }
+
+
+
+
+    if ($request->hasFile('edit_image')) {
+        $fileNameWithExt = $request->file('edit_image')->getClientOriginalName();
+        $filename = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+        $extension = $request->file('edit_image')->getClientOriginalExtension();
+        $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+        $path = $request->file('edit_image')->storeAs('public/images/food/food-menu', $fileNameToStore);
+    }
+    if ($request->hasFile('edit_image')) {
+        $slider->image3 = $fileNameToStore3;
+    }
+
+
+
+    // $slider = new Slider1();
+    // $slider->image1 = $fileNameToStore1;
+    // $slider->image2 = $fileNameToStore2;
+    // $slider->image3 = $fileNameToStore3;
+    $slider->save();
+    session()->flash("success", "uploaded successfully");
     return redirect()->back();
 }
 }

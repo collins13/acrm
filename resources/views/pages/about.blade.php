@@ -23,7 +23,7 @@
 			<div class="col-md-6">
 				<div class="message-box">
 					<h4>About Us</h4>
-					<h2>Welcome to ACRM</h2>
+					<h2>Welcome to AFRICA FOR CHRIST FM RADIO PROJECTS</h2>
 					<div class="section-title" style="text-align: left;">
 						<p>1. We receive & process requests from allover Africa for FMs & SDTs</p>
 					   <p> 2. We identify and verify presented projects to determine their viability and sustainability to professional and technical standards for the interest of the targeted community</p>

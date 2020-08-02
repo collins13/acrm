@@ -66,7 +66,7 @@ body.demos .section-title img {
 
 body.demos .service-widget h3 {
     border-bottom: 1px solid #ededed;
-    font-size: 18px;
+    font-size: 15px;
     padding: 20px 0;
     background-color: #ffffff;
 }
@@ -630,7 +630,7 @@ li.social-links a {
     text-decoration:none;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 10px;
     text-transform: uppercase!important;
     letter-spacing: 1px;
     color: #fff;
@@ -3129,7 +3129,7 @@ select.mobile-device {
 
 
 .banner-bg-1{
-	background: url(uploads/inner-bg.jpg);
+	background: url(uploads/color_background_surface_solid_18481_2560x1080.jpg);
 	padding: 120px 0;	
 	background-clip: initial;
 	background-color: rgba(0, 0, 0, 0);
@@ -3167,7 +3167,7 @@ select.mobile-device {
 	position: relative;
 }
 .banner h2::after {
-    background: #201e21;
+    /* background: #201e21; */
     content: "";
     height: 22px;
     left: 0px;

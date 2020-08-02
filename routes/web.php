@@ -2,6 +2,9 @@
 use App\Project;
 use App\Contact;
 use App\Video;
+use App\Slider1;
+use App\Slider2;
+use App\Slider3;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +20,10 @@ Route::get('/', function () {
     $projects = Project::all();
     $contact = Contact::find(1);
     $video = Video::find(1);
-    return view('main', compact('projects', 'contact', 'video'));
+    $slider1 = Slider1::find(1);
+    $slider2 = Slider2::find(1);
+    $slider3 = Slider3::find(1);
+    return view('main', compact('projects', 'contact', 'video', 'slider1', 'slider2', 'slider3'));
 });
 
 Route::get('/main', function () {
@@ -57,6 +63,14 @@ Route::post('/delete_user/{id}', 'AdminController@delete_user')->name('delete_us
 Route::get('/contact_details', 'AdminController@contact_details')->name('contact_details');
 Route::post('/update_contact', 'AdminController@update_contact')->name('update_contact');
 Route::get('/edit_contact', 'AdminController@edit_contact')->name('edit_contact');
+
+Route::get('/slider', 'AdminController@slider')->name('slider');
+Route::post('/add_slider', 'AdminController@add_slider')->name('add_slider');
+Route::post('/add_slider2', 'AdminController@add_slider2')->name('add_slider2');
+Route::post('/add_slider3', 'AdminController@add_slider3')->name('add_slider3');
+Route::post('/edit_slider', 'AdminController@edit_slider')->name('edit_slider');
+Route::get('/delete_slider', 'AdminController@delete_slider')->name('delete_slider');
+
 });
 
 Route::post('/proposal', 'AdminController@proposal')->name('proposal');

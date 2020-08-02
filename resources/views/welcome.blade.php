@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ACRM</title>
+  <title>AFRICA FOR CHRIST FM RADIO PROJECTS</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -50,7 +50,7 @@
     <div class="container">
 
       <div class="logo float-left">
-	  <h1 class="text-light"><a href="{{url('/')}}"><span>ACRM</span></a></h1>
+	  <h1 class="text-light"><a href="{{url('/')}}"><span>AFRICA FOR CHRIST FM RADIO PROJECTS.</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -83,7 +83,7 @@
           <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Welcome to <span>AFRICA FOR CHRIST RADIO MINISTRIES</span></h2>
+                <h2 class="animated fadeInDown">Welcomwdewde to <span>AFRICA FOR CHRIST RADIO MINISTRIES</span></h2>
                 <p class="animated fadeInUp">we provide Christ centered free consultancy and guidance services to all Christian organizations and
 					individual Christians who have been called to establish Radio stations for Africa.</p>
                 <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>

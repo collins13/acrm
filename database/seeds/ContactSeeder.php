@@ -12,15 +12,15 @@ class ContactSeeder extends Seeder
     public function run()
     {
         DB::table('contacts')->insert([
-            'name1' => 'African church',
-            'name2' => 'African church',
-            'name3' => 'African church',
+            'name1' => 'President: Daniel Masaka',
+            'name2' => 'Grace Momadi',
+            'name3' => 'Enoch Mogusu',
             'email1' => 'acrm@gmail.com',
             'email2' => 'acrm@gmail.com',
             'email3' => 'acrm@gmail.com',
-            'phone1' => '0722954539',
-            'phone2' => '0722954539',
-            'phone3' => '0722954539',
+            'phone1' => '908 343 3022',
+            'phone2' => '908-343-3022',
+            'phone3' => '214-897-0088',
             // 'avatar' => file_get_contents('public/users/admin.jpeg'),
         ]);
     }

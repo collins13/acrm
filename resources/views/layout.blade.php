@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>AFRICA FOR CHRIST RADIO MINISTRIES</title>  
+    <title>AFRICA FOR CHRIST FM RADIO PROJECTS.</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -62,8 +62,8 @@
 						<div class="social-box">
 							<ul>
 								<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+								{{-- <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li> --}}
 							<ul>
 						</div>
 					</div>
@@ -85,7 +85,7 @@
         <nav class="megamenu navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <div class="navbar-header">
-					<a class="navbar-brand" href="{{ url('/') }}">ACRM</a>
+					<a class="navbar-brand" href="{{ url('/') }}">SAMARITAN LAYMEN MINISTRIES Inc.</a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav ml-auto">
-                        <li><a class="active" href="{{ url('/') }}">Home</a></li>
+                        {{-- <li><a class="active" href="{{ url('/') }}">Home</a></li> --}}
                         <li><a href="{{ route('about') }}">About us</a></li>
                         <li><a href="{{ route('services') }}">Our Services</a></li>
                         <li><a href="{{ route('projects') }}">Projects</a></li>
@@ -149,7 +149,7 @@
 							<li>Phone: <a href="#">{{ $contact['phone2'] ? $contact['phone2'] : "" }}  </a></li>
                             <li>Email: <a href="#">{{ $contact->email2 ? $contact->email2 : "" }} </a></li>
                             <br>
-                            <li>Techical Director: {{ $contact->name2 ? $contact->name2 : "" }}</li>
+                            <li>Techical Director: {{ $contact->name3 ? $contact->name3 : "" }}</li>
 							<li>Phone: <a href="#">{{ $contact['phone3'] ? $contact['phone3'] : ""}}  </a></li>
 							<li>Email: <a href="#">{{ $contact->email3 ? $contact->email3 : "" }} </a></li>
 						</ul>
@@ -164,8 +164,6 @@
                         </div>
 						<ul class="social-list">
 							<li><a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="https://linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
 							
 						</ul>
 						
@@ -182,7 +180,7 @@
         <div class="container">
             <div class="footer-distributed">
                 <div class="footer-left">                   
-                    <p class="footer-company-name">All Rights Reserved. &copy; <?= date('Y') ?> <a href="#">AFRICA FOR CHRIST RADIO MINISTRIES</a>
+                    <p class="footer-company-name">All Rights Reserved. &copy; <?= date('Y') ?> <a href="#">AFRICA FOR CHRIST FM RADIO PROJECTS</a>
                 </div>
             </div>
         </div><!-- end container -->

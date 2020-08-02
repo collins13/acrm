@@ -432,6 +432,24 @@ select.form-control + .chosen-container-multi .chosen-results li.result-selected
 							</div>
 						</li>
 
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#slider">
+								<i class="fa fa-calendar"></i>
+								<p>Slider Images</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="slider">
+								<ul class="nav nav-collapse">
+									<li>
+                                    <a href="{{route('slider')}}">
+											<span class="sub-item">Upload images</span>
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
 					</ul>
 				</div>
 			</div>

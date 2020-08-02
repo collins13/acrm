@@ -29,131 +29,15 @@
 <div class="section wb">
     <div class="container">
        <div class="row text-center">
-            <div class="col-md-4 col-sm-6">
-                <div class="about-item">
-                    <div class="about-icon">
-                        <span class="icon icon-display"></span>
-                    </div>
-                    <div class="about-text">
-                        <h3> <a href="#">FM RADIO</a></h3>
-                        <p class="text-justify">
-                            We envisage to install 1000 FM stations around Africa, we are focusing more
-                            1kW. 
-                            <p class="text-justify">Basically this require transmitter, antennae , cables, and mast.
-                            This can cover a radius of 50miles radius. However other regions might need a
-                            much smaller unit for 300watts. That should cover 10miles radius.</p>
-                            <p class="text-justify">Once the infrastructure is up and running we can decide with local stakeholders,
-                            donors and other partners whether it should be studio operated or automated
-                            content flow through online, satellite pre-recorded programs.</p>
-                            <p class="text-justify">The local stakeholders shall be in charge of local operations and related
-                            expenses. These includes staff, utility bills and regular submission of reports.</p>
-                            <p class="text-justify">We have list of completed projects and those that have been verified by our
-                            board and ready for funding. 
-                            <p class="text-justify">If you are interested in sponsoring one of these
-                            projects like click the one you wish to be partner. </p>
-                            <p class="text-justify">For those that will sponsor
-                            50%-100% the station shall be named after their name.</p>
-                            <p class="text-justify">YES I wish to partner with you in adopting FM project.</p>
-                            <p class="text-justify">Yes, I wish to donate to a project</p>
-                            <p class="text-justify">Yes I wish to propose a project for consideration</p>
-                            <p class="text-justify">Yes I wish to pray for the project</p>
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="about-item">
-                    <div class="about-icon">
-                        <span class="icon icon-database"></span>
-                    </div>
-                    <div class="about-text">
-                        <h3> <a href="#">COMMUNITY BROADCAST TERMINAL </a></h3>
-                        <p class="text-justify">
-                            This is very simple setup system widely used in mosques and many
-                            heavily crowded open air marketplace in Uganda.
-                        </p>
-                        <p class="text-justify">
-                            The system comprise loud speakers, audio amplifier, small content play
-                            out ipod and two microphones.
-                        </p>
-                        <p class="text-justify">
-                            The system is either auto operated remotely or one man show. In a
-                            crowded open air market place, a kiosk is opened to house the amplifier
-                            and a 20ft pole is erected outside to hold the loud speakers high up in
-                            the air.
-                        </p>
-                        <p class="text-justify">
-                            On top of the hour news is played out, then followed with a one gospel
-                            music then 5-10 five minutes of a message which is either pre recorded
-                            or live. The message can be a sermon,health topic,educational program
-                            or foreign language teaching or a local leader passing a message. Then
-                            in between paid announcements are made. i.e. a school opening date,
-                            lost child, found lost phone, vaccination exercise.
-                        </p>
-                        <p class="text-justify">
-                            The local stakeholder are responsible for the terminal.
-                        </p>
-                        <p class="text-justify">
-                            YES I wish to partner with you in adopting FM project.
-                        </p>
-
-                        <p class="text-justify">
-                            Yes, I wish to donate to a project
-                            Yes I wish to propose a project for consideration
-                            Yes I wish to pray for the project`
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="about-item">
-                    <div class="about-icon">
-                        <span class="icon icon-magic-wand"></span>
-                    </div>
-                    <div class="about-text" style="height: 120%;">
-                        <h3> <a href="#">PODCAST DEVELOPMENT </a></h3>
-                        <p class="text-justify">
-                            This is building and content resource management where local FM
-                            stations/churches /professionals can record 5min/13min programs in
-                            high quality and well researched topics.
-                        </p>
-
-                        <p class="text-justify">
-                            Then these programs are
-                            collected and edited to required standards before uploaded to archives of
-                            asset management for easy downloading and easy playout.
-                        </p>
-
-                        <p class="text-justify">
-                            This can be accessed by anyone for free from online app that is mobile
-                            friendly. This asset management system shall be used as a resource for
-                            content supply for FM stations and CBT.
-                        </p>
-                        <p class="text-justify">
-                            The podcast production is
-                            managed by Central administration. Of Africa For Christ Radios of Sun
-                            Ministries.
-                        </p>
-
-                        <p class="text-justify">
-                            YES, I wish to partner with you in adopting FM project.
-                        </p>
-                        <p class="text-justify">
-                            Yes, I wish to donate to a project</p>
-                            <p class="text-justify">Yes I wish to propose a project for consideration</p>
-
-                        <p class="text-justify">Yes I wish to pray for the project</p>
-                    </div>
-                </div>
-            </div>
-
+           <p>
+            We provide faith based free consultancy services to Christian Organizations, churches, individual Christians to establish gospel based FM radio stations in locations of their choice. We do site survey, we recommend, we fund raise for viable  projects and we implement those projects. We train staff and build production studios at no charge.
+           </p>
 
         </div>
     </div><!-- end container -->
 </div><!-- end section -->
 
-<div id="testimonials" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_03.png');">
+{{-- <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_03.png');">
     <div class="container">
         <div class="section-title text-center">
             <h3>Testimonials</h3>
@@ -261,5 +145,5 @@
         </div><!-- end row -->
 
     </div><!-- end container -->
-</div><!-- end section -->
+</div><!-- end section --> --}}
 @endsection

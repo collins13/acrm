@@ -6,10 +6,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="banner">
-                    <h2><span>Our Portfolio</span></h2>
+                    <h2><span>Our Projects</span></h2>
                     <ul class="page-title-link">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Our Portfolio</a></li>
+                        <li><a href="#">Our Projects</a></li>
                     </ul>
                 </div>
             </div>
@@ -27,9 +27,8 @@
 
 
 {{-- complete --}}
-
-<div class="owl-services owl-carousel owl-theme">
-
+<div class="row">
+  <div class="col-4">
     @foreach($projects as $project)
     @if($project->status >= 100)
     <div class="service-widget">
@@ -47,19 +46,60 @@
     </div>
     @endif
     @endforeach
-    
-    
+  </div>
+</div>
+<br><hr>
+<div class="row">
+  @foreach($projects as $project)
+  @if($project->status < 100)
+      <div class="col-md-4 mb-3">
+          <div class="service-widget">
+              <div class="post-media wow fadeIn">
+                  <a href="/base/uploads/service_01.jpg" data-rel="prettyPhoto[gal]"
+                      class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                  <img src="/storage/images/{{ $project->image }}" alt="" class="img-fluid img-rounded">
+              </div>
+              <div class="service-dit">
+                  <h3>{{ $project->name }}</h3>
+                  <p>Complete {{ $project->status }}%</p>
+              </div>
+              <div class="card-footer bg-transparent border-success">
+                  <a href="{{ route('donate') }}"
+                      class="btn btn-sm btn-outline-success btn-block">Fund This Project</a>
+              </div>
+          </div>
+</div>
+@endif
+@endforeach
+</div>
+{{-- <div class="owl-services owl-carousel owl-theme">
 
-    <!-- end service -->
+    @foreach($projects as $project)
+    @if($project->status >= 100)
+    <div class="service-widget">
+        <div class="post-media wow fadeIn">
+            <a href="/PuzzlePiece2.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+            <img src="/storage/images/{{ $project->image }}" alt="" class="img-fluid img-rounded">
+        </div>
+        <div class="service-dit">
+            <h3>{{ $project->name }}</h3>
+            <p>{{ ($project->status >=100) ? "Completed" : $project->status."%" }}</p>
+        </div>
+        <div class="card-footer bg-transparent border-success">
+            {{-- <a href="#" class="btn btn-sm btn-outline-success btn-block">Fund This Project</a> --}}
+        {{-- </div>
+    </div>
+    @endif
+    @endforeach
 
-</div><!-- end row -->
+</div> --}}
 {{-- ?end --}}
 
 
 
 <br>
 
-        <div class="owl-services owl-carousel owl-theme">
+        {{-- <div class="owl-services owl-carousel owl-theme">
 
             @foreach($projects as $project)
             @if($project->status < 100)
@@ -78,13 +118,13 @@
             </div>
 
             @endif
-            @endforeach
+            @endforeach --}}
             
 
             <!-- end service -->
 
             <!-- end service -->
-        </div><!-- end row -->
+        </div>
 
         <hr class="hr1">
 <h1 class="text-center">Send us proposal below form</h1><hr>
