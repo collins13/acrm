@@ -60,7 +60,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
                         <div class="slider-content-area">
-                            <div class="slide-text" style="margin-top:20px;">
+                            <div class="slide-text" style="margin-top:30px;">
                                 <h1 class="homepage-three-title">Welcome to <span> AFRICA FOR CHRIST FM RADIO
                                         PROJECTS</span></h1>
                                 <p style="text-align: justify; color:white">
@@ -120,7 +120,7 @@
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3">
                         <div class="slider-content-area" style="overflow-y: auto;">
-                            <div class="slide-text" style="margin-top:20px;">
+                            <div class="slide-text" style="margin-top:40px;">
                                 <h1 class="homepage-three-title">Welcome to <span> AFRICA FOR CHRIST FM RADIO
                                         PROJECTS</span></h1>
                                 {{-- <h2>Africa is largely unentered and the large populaon is unreached by the gospel of Christ. </h2> --}}
