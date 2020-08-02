@@ -27,9 +27,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-4 col-xs-4" style="margin-top: 30px;">
+                    <div class="col-lg-8 col-md-8 col-sm-4 col-xs-4" style="margin-top: 20px;">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner" style=" z-index: 1;">
+                            <div class="carousel-inner" style=" z-index: 1; margin-top: 20px;">
                                 <div class="carousel-item active">
                                     <img class="d-block w-100" src="/storage/slider/{{ $slider1->image1 ? $slider1->image1 : ""}}" height="500" alt="First slide">
                                 </div>
