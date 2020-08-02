@@ -71,7 +71,7 @@
 				<div class="col-md-6 col-sm-6">
 					<div class="left-top">
 						<div class="email-box">
-							<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{ $contact->email1 ? $contact->email1 : "test" }}</a>
+							{{-- <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{ $contact->email1 ? $contact->email1 : "test" }}</a> --}}
 						</div>
 						<div class="phone-box">
 							<a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> {{ $contact->phone1 ? $contact->phone1 : "" }}</a>
@@ -85,7 +85,7 @@
         <nav class="megamenu navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <div class="navbar-header">
-					<a class="navbar-brand" href="{{ url('/') }}">SAMARITAN LAYMEN MINISTRIES Inc.</a>
+					<a class="navbar-brand" href="{{ url('/') }}">SAMARITAN LAYMEN MINISTRIES</a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -143,15 +143,15 @@
 						<ul>
 							<li>President: {{ $contact->name1 ? $contact->name1 : "" }}</li>
 							<li>Phone: <a href="#">{{ $contact['phone1'] ? $contact['phone1'] : "" }}  </a></li>
-                            <li>Email: <a href="#">{{ $contact->email1 ? $contact->email1 :"" }} </a></li>
+                            {{-- <li>Email: <a href="#">{{ $contact->email1 ? $contact->email1 :"" }} </a></li> --}}
                             <br>
                             <li>Vice President: {{ $contact->name2 ? $contact->name2 : "" }}</li>
 							<li>Phone: <a href="#">{{ $contact['phone2'] ? $contact['phone2'] : "" }}  </a></li>
-                            <li>Email: <a href="#">{{ $contact->email2 ? $contact->email2 : "" }} </a></li>
+                            {{-- <li>Email: <a href="#">{{ $contact->email2 ? $contact->email2 : "" }} </a></li> --}}
                             <br>
                             <li>Techical Director: {{ $contact->name3 ? $contact->name3 : "" }}</li>
 							<li>Phone: <a href="#">{{ $contact['phone3'] ? $contact['phone3'] : ""}}  </a></li>
-							<li>Email: <a href="#">{{ $contact->email3 ? $contact->email3 : "" }} </a></li>
+							{{-- <li>Email: <a href="#">{{ $contact->email3 ? $contact->email3 : "" }} </a></li> --}}
 						</ul>
 						
 					</div>
