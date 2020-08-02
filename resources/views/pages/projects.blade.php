@@ -28,9 +28,9 @@
 
 {{-- complete --}}
 <div class="row">
-  <div class="col-4">
-    @foreach($projects as $project)
-    @if($project->status >= 100)
+  @foreach($projects as $project)
+  @if($project->status >= 100)
+  <div class="col-md-4">
     <div class="service-widget">
         <div class="post-media wow fadeIn">
             <a href="/PuzzlePiece2.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
@@ -44,9 +44,9 @@
             {{-- <a href="#" class="btn btn-sm btn-outline-success btn-block">Fund This Project</a> --}}
         </div>
     </div>
-    @endif
-    @endforeach
   </div>
+  @endif
+  @endforeach
 </div>
 <br><hr>
 <div class="row">
