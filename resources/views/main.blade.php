@@ -31,13 +31,13 @@
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top: 80px;">
                             <div class="carousel-inner" style=" z-index: 1;">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider1->image1 ? $slider1->image1 : ""}}')}}" height="500" alt="First slide">
+                                    <img class="d-block w-100" src="/storage/slider/{{ $slider1->image1 ? $slider1->image1 : ""}}" height="500" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider1->image2 ? $slider1->image2 : ""}}')}}" height="500" alt="Second slide">
+                                    <img class="d-block w-100" src="/storage/slider/{{ $slider1->image2 ? $slider1->image2 : ""}}" height="500" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider1->image3 ? $slider1->image3 : ""}}')}}" height="500" alt="Third slide">
+                                    <img class="d-block w-100" src="/storage/slider/{{ $slider1->image3 ? $slider1->image3 : ""}}" height="500" alt="Third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -91,13 +91,13 @@
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top: 80px;">
                             <div class="carousel-inner" style=" z-index: 1;">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider2->image1 ? $slider2->image1 : ""}}')}}" height="500" alt="First slide">
+                                    <img class="d-block w-100" src="/storage/slider/{{ $slider2->image1 ? $slider2->image1 : ""}}" height="500" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider2->image2 ? $slider2->image2 : ""}}')}}" height="500" alt="Second slide">
+                                    <img class="d-block w-100" src="/storage/slider/{{ $slider2->image2 ? $slider2->image2 : ""}}" height="500" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider2->image3 ? $slider2->image3 : ""}}')}}" height="500" alt="Third slide">
+                                    <img class="d-block w-100" src="/storage/slider/{{ $slider2->image3 ? $slider2->image3 : ""}}" height="500" alt="Third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -155,13 +155,13 @@
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top: 80px;">
                             <div class="carousel-inner" style=" z-index: 1;">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider3->image1 ? $slider3->image1 : ""}}')}}" height="500" alt="First slide">
+                                    <img class="d-block w-100" src="/storage/slider/{{ $slider3->image1 ? $slider3->image1 : ""}}" height="500" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider3->image2 ? $slider3->image2 : ""}}')}}" height="500" alt="Second slide">
+                                    <img class="d-block w-100" src="/storage/slider/{{ $slider3->image2 ? $slider3->image2 : ""}}" height="500" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider3->image3 ? $slider3->image3 : ""}}')}}" height="500" alt="Third slide">
+                                    <img class="d-block w-100" src="/storage/slider/{{ $slider3->image3 ? $slider3->image3 : ""}}" height="500" alt="Third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -209,7 +209,7 @@
             <div class="col-md-6">
                 <div class="post-media wow fadeIn">
                     <video width="500" height="300" controls autoplay>
-                        <source src="{{ asset('storage/images/{{ $video->name }}') }}" type="video/mp4">
+                        <source src="/storage/images/{{ $video->name }}" type="video/mp4">
                         <source src="movie.ogg" type="video/ogg">
                     </video>
                 </div><!-- end media -->
@@ -273,9 +273,9 @@
                     <div class="col-md-4 mb-3">
                         <div class="service-widget">
                             <div class="post-media wow fadeIn">
-                                <a href="{{ asset('base/uploads/service_01.jpg" data-rel="prettyPhoto[gal]')}}"
+                                <a href="/base/uploads/service_01.jpg" data-rel="prettyPhoto[gal]"
                                     class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                <img src="{{ asset('storage/images/{{ $project->image }}')}}" alt="" class="img-fluid img-rounded">
+                                <img src="/storage/images/{{ $project->image }}" alt="" class="img-fluid img-rounded">
                             </div>
                             <div class="service-dit">
                                 <h3>{{ $project->name }}</h3>
