@@ -4,39 +4,39 @@
 
     <!-- Basic -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
+
      <!-- Site Metas -->
-    <title>AFRICA FOR CHRIST FM RADIO PROJECTS.</title>  
+    <title>AFRICA FOR CHRIST FM RADIO PROJECTS.</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="/base/images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="/base/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="{{ asset('base/images/favicon.ico') }}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{{ asset('base/images/apple-touch-icon.png')}}">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('base/css/bootstrap.min.css') }}">
     <!-- Site CSS -->
-    <link rel="stylesheet" href="/base/style.css">
+    <link rel="stylesheet" href="{{ asset('base/style.css') }}">
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="/base/css/responsive.css">
+    <link rel="stylesheet" href="{{ asset('base/css/responsive.css') }}">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/base/css/custom.css">
+    <link rel="stylesheet" href="{{ asset('base/css/custom.css') }}">
 
     <!-- Modernizer for Portfolio -->
-    <script src="/base/js/modernizer.js"></script>
+    <script src="{{ asset('base/js/modernizer.js') }}"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
 
 </head>
 <body>
@@ -53,7 +53,7 @@
 		</div>
     </div><!-- end loader -->
     <!-- END LOADER -->
-    
+
 	<div class="top-bar">
 		<div class="container">
 			<div class="row">
@@ -108,7 +108,7 @@
             </div>
         </nav>
     </header>
-	
+
 @yield('content')
 
     <footer class="footer">
@@ -132,14 +132,14 @@
                         </ul><!-- end links -->
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
-				
-             
+
+
 				<div class="col-md-6 col-lg-3 mr-5">
 					<div class="widget footer-contact clearfix">
 						<div class="widget-title">
                             <h3>Contact Us</h3>
                         </div>
-						
+
 						<ul>
 							<li>President: {{ $contact->name1 ? $contact->name1 : "" }}</li>
 							<li>Phone: <a href="#">{{ $contact['phone1'] ? $contact['phone1'] : "" }}  </a></li>
@@ -153,10 +153,10 @@
 							<li>Phone: <a href="#">{{ $contact['phone3'] ? $contact['phone3'] : ""}}  </a></li>
 							{{-- <li>Email: <a href="#">{{ $contact->email3 ? $contact->email3 : "" }} </a></li> --}}
 						</ul>
-						
+
 					</div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3">
 					<div class="widget footer-contact clearfix">
                         <div class="widget-title">
@@ -164,14 +164,14 @@
                         </div>
 						<ul class="social-list">
 							<li><a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a></li>
-							
+
 						</ul>
-						
+
 					</div>
 				</div>
-				
-				
-				
+
+
+
             </div><!-- end row -->
         </div><!-- end container -->
     </footer><!-- end footer -->
@@ -179,7 +179,7 @@
     <div class="copyrights">
         <div class="container">
             <div class="footer-distributed">
-                <div class="footer-left">                   
+                <div class="footer-left">
                     <p class="footer-company-name">All Rights Reserved. &copy; <?= date('Y') ?> <a href="#">AFRICA FOR CHRIST FM RADIO PROJECTS</a>
                 </div>
             </div>
@@ -189,16 +189,16 @@
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
     <!-- ALL JS FILES -->
-    <script src="/base/js/all.js"></script>
+    <script src="{{ asset('base/js/all.js') }}"></script>
     <!-- ALL PLUGINS -->
-    <script src="/base/js/custom.js"></script>
-    <script src="/base/js/portfolio.js"></script>
-    <script src="/base/js/hoverdir.js"></script>   
+    <script src="{{ asset('base/js/custom.js') }}"></script>
+    <script src="{{ asset('base/js/portfolio.js') }}"></script>
+    <script src="{{ asset('base/js/hoverdir.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <script>
         $(document).ready(function(){
-            
+
             @if(Session::has('success'))
             toastr.success("{{ Session::get('success') }}");
             @endif
