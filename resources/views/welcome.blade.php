@@ -10,23 +10,23 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="/assets/img/favicon.png" rel="icon">
-  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('assets/img/favicon.png')}}" rel="icon">
+  <link href="{{asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/venobox/venobox.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="/assets/css/style.css" rel="stylesheet">
+  <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Mamba - v2.0.1
@@ -308,7 +308,7 @@
         </div>
 
         <div class="row">
-          
+
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="icofont-computer"></i></div>
             <h6 class="title"><a href="">FM RADIO</a></h6>
@@ -388,8 +388,8 @@
               </div>
             </div>
           </div>
-   
-         
+
+
         </div>
       </div>
     </section><!-- End Services Section -->
@@ -408,7 +408,7 @@
               <div class="card-header">Radio Tarumbeta –Kenya</div>
               <div class="card-body">
                 <h5 class="card-title">Completed</h5>
-                
+
               </div>
               <div class="card-footer bg-transparent border-success">
                 {{-- <a href="#" class="btn btn-outline-success btn-block">Fund this Project</a> --}}
@@ -510,7 +510,7 @@
           funds.
         </p>
         <div class="card">
-         
+
           <div class="card-body">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
@@ -547,19 +547,19 @@
                   <div class="validate"></div>
                 </div>
               </div>
-           
+
               <div class="form-group">
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Project description"></textarea>
                 <div class="validate"></div>
               </div>
-              
+
               <div class="text-center"><button type="submit" class="btn btn-success">Submit</button></div>
             </form>
           </div>
         </div>
 
       </div>
-    </section><!-- End Counts Section --> 
+    </section><!-- End Counts Section -->
 
     <!-- ======= Our Portfolio Section ======= -->
     {{-- <section id="portfolio" class="portfolio section-bg">
@@ -894,10 +894,10 @@
                   <input type="text" name="zip" class="form-control" id="zip" placeholder="Your zip" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
-           
+
               </div>
-                
-         
+
+
               <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
@@ -916,7 +916,7 @@
             May God bless you most abundantly. We shall periodically update you on the
 progress of the project you have sponsored above.
             </form>
-            
+
           </div>
 
         </div>
@@ -971,7 +971,7 @@ progress of the project you have sponsored above.
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
-         
+
                 <div class="col-lg-6 form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
@@ -1019,7 +1019,7 @@ progress of the project you have sponsored above.
 
           <div class="col-lg-4 col-md-6 footer-links">
             <h6>Social Links</h6>
-            
+
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -1027,7 +1027,7 @@ progress of the project you have sponsored above.
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
-           
+
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
@@ -1084,19 +1084,19 @@ progress of the project you have sponsored above.
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="/assets/vendor/jquery/jquery.min.js"></script>
-  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="/assets/vendor/php-email-form/validate.js"></script>
-  <script src="/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="/assets/vendor/venobox/venobox.min.js"></script>
-  <script src="/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="/assets/vendor/counterup/counterup.min.js"></script>
-  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{asset('assets/vendor/jquery-sticky/jquery.sticky.js')}}"></script>
+  <script src="{{asset('assets/vendor/venobox/venobox.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/waypoints/jquery.waypoints.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/counterup/counterup.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="/assets/js/main.js"></script>
+  <script src="{{asset('assets/js/main.js')}}"></script>
 
 </body>
 
