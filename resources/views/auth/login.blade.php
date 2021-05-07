@@ -80,10 +80,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Login</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="/asset1/assets/img/icon.ico" type="image/x-icon"/>
+	<link rel="icon" href="{{ asset('asset1/assets/img/icon.ico')}}" type="image/x-icon"/>
 
 	<!-- Fonts and icons -->
-	<script src="/asset1//assets/js/plugin/webfont/webfont.min.js"></script>
+	<script src="{{ asset('asset1//assets/js/plugin/webfont/webfont.min.js')}}"></script>
 	<script>
 		WebFont.load({
 			google: {"families":["Open+Sans:300,400,600,700"]},
@@ -93,10 +93,10 @@
 			}
 		});
 	</script>
-	
+
 	<!-- CSS Files -->
-	<link rel="stylesheet" href="/asset1/assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/asset1/assets/css/azzara.min.css">
+	<link rel="stylesheet" href="{{ asset('asset1/assets/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{ asset('asset1/assets/css/azzara.min.css')}}">
 </head>
 <body class="login">
 	<div class="wrapper wrapper-login">
@@ -131,7 +131,7 @@
 						<input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 						<label class="custom-control-label" for="rememberme">Remember Me</label>
 					</div>
-					
+
 					{{-- <a href="#" class="link float-right">Forget Password ?</a> --}}
 				</div>
 				<div class="form-action mb-3">
@@ -183,10 +183,10 @@
 			</div>
 		</div>
 	</div>
-	<script src="/asset1/assets/js/core/jquery.3.2.1.min.js"></script>
-	<script src="/asset1/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-	<script src="/asset1/assets/js/core/popper.min.js"></script>
-	<script src="/asset1/assets/js/core/bootstrap.min.js"></script>
-	<script src="/asset1/assets/js/ready.js"></script>
+	<script src="{{ asset('asset1/assets/js/core/jquery.3.2.1.min.js')}}"></script>
+	<script src="{{ asset('asset1/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js')}}"></script>
+	<script src="{{ asset('asset1/assets/js/core/popper.min.js')}}"></script>
+	<script src="{{ asset('asset1/assets/js/core/bootstrap.min.js')}}"></script>
+	<script src="{{ asset('asset1/assets/js/ready.js')}}"></script>
 </body>
 </html>
