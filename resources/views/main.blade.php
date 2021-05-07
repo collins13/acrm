@@ -31,13 +31,13 @@
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top: 80px;">
                             <div class="carousel-inner" style=" z-index: 1;">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="/storage/slider/{{ $slider1->image1 ? $slider1->image1 : ""}}" height="500" alt="First slide">
+                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider1->image1 ? $slider1->image1 : ""}}')}}" height="500" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="/storage/slider/{{ $slider1->image2 ? $slider1->image2 : ""}}" height="500" alt="Second slide">
+                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider1->image2 ? $slider1->image2 : ""}}')}}" height="500" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="/storage/slider/{{ $slider1->image3 ? $slider1->image3 : ""}}" height="500" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider1->image3 ? $slider1->image3 : ""}}')}}" height="500" alt="Third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -91,13 +91,13 @@
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top: 80px;">
                             <div class="carousel-inner" style=" z-index: 1;">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="/storage/slider/{{ $slider2->image1 ? $slider2->image1 : ""}}" height="500" alt="First slide">
+                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider2->image1 ? $slider2->image1 : ""}}')}}" height="500" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="/storage/slider/{{ $slider2->image2 ? $slider2->image2 : ""}}" height="500" alt="Second slide">
+                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider2->image2 ? $slider2->image2 : ""}}')}}" height="500" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="/storage/slider/{{ $slider2->image3 ? $slider2->image3 : ""}}" height="500" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider2->image3 ? $slider2->image3 : ""}}')}}" height="500" alt="Third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -155,13 +155,13 @@
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top: 80px;">
                             <div class="carousel-inner" style=" z-index: 1;">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="/storage/slider/{{ $slider3->image1 ? $slider3->image1 : ""}}" height="500" alt="First slide">
+                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider3->image1 ? $slider3->image1 : ""}}')}}" height="500" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="/storage/slider/{{ $slider3->image2 ? $slider3->image2 : ""}}" height="500" alt="Second slide">
+                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider3->image2 ? $slider3->image2 : ""}}')}}" height="500" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="/storage/slider/{{ $slider3->image3 ? $slider3->image3 : ""}}" height="500" alt="Third slide">
+                                    <img class="d-block w-100" src="{{ asset('storage/slider/{{ $slider3->image3 ? $slider3->image3 : ""}}')}}" height="500" alt="Third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -209,7 +209,7 @@
             <div class="col-md-6">
                 <div class="post-media wow fadeIn">
                     <video width="500" height="300" controls autoplay>
-                        <source src="/storage/images/{{ $video->name }}" type="video/mp4">
+                        <source src="{{ asset('storage/images/{{ $video->name }}') }}" type="video/mp4">
                         <source src="movie.ogg" type="video/ogg">
                     </video>
                 </div><!-- end media -->
@@ -273,9 +273,9 @@
                     <div class="col-md-4 mb-3">
                         <div class="service-widget">
                             <div class="post-media wow fadeIn">
-                                <a href="/base/uploads/service_01.jpg" data-rel="prettyPhoto[gal]"
+                                <a href="{{ asset('base/uploads/service_01.jpg" data-rel="prettyPhoto[gal]')}}"
                                     class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                <img src="/storage/images/{{ $project->image }}" alt="" class="img-fluid img-rounded">
+                                <img src="{{ asset('storage/images/{{ $project->image }}')}}" alt="" class="img-fluid img-rounded">
                             </div>
                             <div class="service-dit">
                                 <h3>{{ $project->name }}</h3>
@@ -291,7 +291,7 @@
         @endforeach
     </div>
     <div class="owl-services owl-carousel owl-theme">
-{{-- 
+{{--
         @foreach($projects as $project)
             @if($project->status < 100)
 
@@ -328,7 +328,7 @@
                     <a href="#" class="btn btn-sm btn-outline-success btn-block">Fund This Project</a>
                 </div>
             </div>
-            
+
 
             <div class="service-widget">
                 <div class="post-media wow fadeIn">
@@ -343,7 +343,7 @@
                     <a href="#" class="btn btn-sm btn-outline-success btn-block">Fund This Project</a>
                 </div>
             </div>
-            
+
             <div class="service-widget">
                 <div class="post-media wow fadeIn">
                     <a href="/PuzzlePiece2.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
@@ -372,7 +372,7 @@
 </div><!-- end container -->
 </div><!-- end section -->
 
-{{-- 
+{{--
 <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_03.png');">
     <div class="container">
         <div class="section-title text-center">
@@ -384,7 +384,7 @@
             <div class="col-md-12 col-sm-12">
                 <div class="testi-carousel owl-carousel owl-theme">
                     <div class="testimonial clearfix">
-                        
+
                         <div class="desc">
                             <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
                             <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
@@ -424,7 +424,7 @@
                             <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
                             <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
                         </div>
-                        <div class="testi-meta">                                
+                        <div class="testi-meta">
                             <h4>James Fernando <small>- Manager of Racer</small></h4>
                         </div>
                         <!-- end testi-meta -->
@@ -436,7 +436,7 @@
                             <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
                             <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
                         </div>
-                        <div class="testi-meta">                                
+                        <div class="testi-meta">
                             <h4>Jacques Philips <small>- Designer</small></h4>
                         </div>
                         <!-- end testi-meta -->
@@ -448,7 +448,7 @@
                             <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
                             <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
                         </div>
-                        <div class="testi-meta">                                
+                        <div class="testi-meta">
                             <h4>Venanda Mercy <small>- Newyork City</small></h4>
                         </div>
                         <!-- end testi-meta -->
