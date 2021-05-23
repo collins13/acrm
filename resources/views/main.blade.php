@@ -10,8 +10,8 @@
                     <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
                         <div class="slider-content-area">
                             <div class="slide-text" style="margin-top:20px;">
-                                <h3 class="homepage-three-title">WELCOME TO <span> AFRICA FOR CHRIST FM RADIO
-                                        PROJECTS</span></h3>
+                                <h2 class="homepage-three-title">WELCOME TO <span> AFRICA FOR CHRIST FM RADIO
+                                        PROJECTS</span></h2>
                                 <p style="text-align: justify; color:white">We provide Christ centered free consultancy
                                     and guidance services to all Christian organizations and individual Christians who
                                     have been called to establish Radio stations in Africa.
@@ -61,8 +61,8 @@
                     <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
                         <div class="slider-content-area">
                             <div class="slide-text" style="margin-top:30px;">
-                                <h1 class="homepage-three-title">WELCOME TO <span> AFRICA FOR CHRIST FM RADIO
-                                        PROJECTS</span></h1>
+                                <h2 class="homepage-three-title h3">WELCOME TO <span> AFRICA FOR CHRIST FM RADIO
+                                        PROJECTS</span></h2>
                                 <p style="text-align: justify; color:white">
                                     Africa is largely unentered and the large population is unreached by the gospel of
                                     Christ. The same population needs soul nurturing through continuous broadcasts and
@@ -121,8 +121,8 @@
                     <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3">
                         <div class="slider-content-area">
                             <div class="slide-text" style="margin-top:70px;">
-                                <h1 class="homepage-three-title">WELCOME TO <span> AFRICA FOR CHRIST FM RADIO
-                                        PROJECTS</span></h1>
+                                <h2 class="homepage-three-title">WELCOME TO <span> AFRICA FOR CHRIST FM RADIO
+                                        PROJECTS</span></h2>
                                 {{-- <h2>Africa is largely unentered and the large populaon is unreached by the gospel of Christ. </h2> --}}
                                 <p style="text-align: justify; color:white; float:left">
                                     We envisage to have 1000+ FM stations for Christ, one FM every region in Africa and

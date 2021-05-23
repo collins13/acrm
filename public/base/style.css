@@ -325,7 +325,7 @@ a img.aligncenter {
 	background: #393939;
 }
 .left-top{
-	padding: 3px 0px; 
+	padding: 3px 0px;
 	float: right;
 }
 .email-box{
@@ -416,7 +416,7 @@ a img.aligncenter {
     border-radius: 0;
     color: #ffffff;
     font-size: 16px;
-    font-style: normal;    
+    font-style: normal;
     text-transform: capitalize;
     background-color: transparent;
 }
@@ -465,7 +465,7 @@ li.social-links a {
 }
 
 .navbar-nav li {
-    position: relative;	
+    position: relative;
 }
 
 .navbar-nav span {
@@ -550,6 +550,10 @@ li.social-links a {
 	color: #3BB143;
 }
 
+.slide-text h2 span{
+	color: #3BB143;
+}
+
 .slide-text h2 {
     color: #fff;
     font-size: 22px;
@@ -623,7 +627,7 @@ li.social-links a {
 }
 
 /* Btn 11  */
-.btn11{    
+.btn11{
     padding:10px 60px;
     margin: 0 10px;
     display: inline-block;
@@ -659,7 +663,7 @@ li.social-links a {
     height: 100%;
     display: block;
     background: #3BB143;
-    position: absolute;  
+    position: absolute;
     left: 0%;
     opacity: 1;
     top: 0;
@@ -668,7 +672,7 @@ li.social-links a {
        -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
          -o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
             transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-  } 
+  }
 
 .btn11::after {
     content: '';
@@ -2468,7 +2472,7 @@ select.mobile-device {
 
 
 .cont-btn{
-	
+
 }
 .cont-btn button{
 	border: none;
@@ -2628,7 +2632,7 @@ select.mobile-device {
 
 
 .loader {
-  
+
   position: absolute;
     margin: 0 auto;
     left: 1%;
@@ -3130,7 +3134,7 @@ select.mobile-device {
 
 .banner-bg-1{
 	background: url(uploads/color_background_surface_solid_18481_2560x1080.jpg);
-	padding: 120px 0;	
+	padding: 120px 0;
 	background-clip: initial;
 	background-color: rgba(0, 0, 0, 0);
 	background-origin: initial;
@@ -3348,7 +3352,7 @@ select.mobile-device {
     transition: all 0.5s ease 0s;
 }
 .pricingTable:hover .pricing-content:before{ background: #3BB143; }
-.pricingTable .pricingTable-signup{  
+.pricingTable .pricingTable-signup{
 	border: 1px solid #3BB143;
     color: #043565;
 	top: 0;
