@@ -96,9 +96,6 @@
 {{-- ?end --}}
 
 
-
-<br>
-
         {{-- <div class="owl-services owl-carousel owl-theme">
 
             @foreach($projects as $project)

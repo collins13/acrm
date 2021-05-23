@@ -104,13 +104,13 @@ class AdminController extends Controller
 
         $update->save();
 
-        SEOTools::setTitle(url('/'));
+        SEOTools::setTitle($request->editname);
         SEOTools::setDescription($update->desc);
         SEOTools::opengraph()->setUrl(url('/'));
         SEOTools::setCanonical(url('/'));
         SEOTools::opengraph()->addProperty('type', $request->editname);
         // SEOTools::twitter()->setSite('@LuizVinicius73');
-        SEOTools::jsonLd()->addImage($fileNameToStore );
+        // SEOTools::jsonLd()->addImage($fileNameToStore );
 
         session()->flash("success", "project updated successful");
         return redirect()->back();
