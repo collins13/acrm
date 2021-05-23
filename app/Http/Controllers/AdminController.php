@@ -24,6 +24,7 @@ use App\Mail\PartnerMail;
 use App\Slider1;
 use App\Slider2;
 use App\Slider3;
+use Artesaos\SEOTools\Facades\SEOTools;
 class AdminController extends Controller
 {
 
@@ -64,6 +65,14 @@ class AdminController extends Controller
         $project->desc = $request->desc;
         $project->save();
 
+        SEOTools::setTitle(url('/'));
+        SEOTools::setDescription($request->desc);
+        SEOTools::opengraph()->setUrl(url('/'));
+        SEOTools::setCanonical(url('/'));
+        SEOTools::opengraph()->addProperty('type', $request->name);
+        // SEOTools::twitter()->setSite('@LuizVinicius73');
+        SEOTools::jsonLd()->addImage($fileNameToStore );
+
         session()->flash('success', 'project added successful');
         return redirect()->back();
     }
@@ -94,6 +103,14 @@ class AdminController extends Controller
         }
 
         $update->save();
+
+        SEOTools::setTitle(url('/'));
+        SEOTools::setDescription($update->desc);
+        SEOTools::opengraph()->setUrl(url('/'));
+        SEOTools::setCanonical(url('/'));
+        SEOTools::opengraph()->addProperty('type', $request->editname);
+        // SEOTools::twitter()->setSite('@LuizVinicius73');
+        SEOTools::jsonLd()->addImage($fileNameToStore );
 
         session()->flash("success", "project updated successful");
         return redirect()->back();
@@ -220,7 +237,7 @@ class AdminController extends Controller
             $user = User::create(['name'=>$request->name, 'email'=>$request->email, 'password'=>$password]);
 
             DB::commit();
-    
+
             Session::flash("success", "user created successfuly");
             return redirect()->back();
         } catch (\Exception $e) {
@@ -337,7 +354,7 @@ public function add_slider(Request $request)
         $extension1 = $request->file('image1')->getClientOriginalExtension();
         $fileNameToStore1 = $filename1 . '_' . time() . '.' . $extension1;
         $path1 = $request->file('image1')->storeAs('public/slider', $fileNameToStore1);
-    } 
+    }
     if ($request->hasFile('image1')) {
         $slider->image1 = $fileNameToStore1;
     }
@@ -347,7 +364,7 @@ public function add_slider(Request $request)
         $extension2 = $request->file('image2')->getClientOriginalExtension();
         $fileNameToStore2 = $filename2 . '_' . time() . '.' . $extension2;
         $path2 = $request->file('image2')->storeAs('public/slider', $fileNameToStore2);
-    } 
+    }
     if ($request->hasFile('image2')) {
         $slider->image2 = $fileNameToStore2;
     }
@@ -358,7 +375,7 @@ public function add_slider(Request $request)
         $extension3 = $request->file('image3')->getClientOriginalExtension();
         $fileNameToStore3 = $filename3 . '_' . time() . '.' . $extension3;
         $path3 = $request->file('image3')->storeAs('public/slider', $fileNameToStore3);
-    } 
+    }
     if ($request->hasFile('image3')) {
         $slider->image3 = $fileNameToStore3;
     }
@@ -397,7 +414,7 @@ public function add_slider2(Request $request)
         $extension1 = $request->file('image1')->getClientOriginalExtension();
         $fileNameToStore1 = $filename1 . '_' . time() . '.' . $extension1;
         $path1 = $request->file('image1')->storeAs('public/slider', $fileNameToStore1);
-    } 
+    }
     if ($request->hasFile('image1')) {
         $slider->image1 = $fileNameToStore1;
     }
@@ -407,7 +424,7 @@ public function add_slider2(Request $request)
         $extension2 = $request->file('image2')->getClientOriginalExtension();
         $fileNameToStore2 = $filename2 . '_' . time() . '.' . $extension2;
         $path2 = $request->file('image2')->storeAs('public/slider', $fileNameToStore2);
-    } 
+    }
     if ($request->hasFile('image2')) {
         $slider->image2 = $fileNameToStore2;
     }
@@ -418,7 +435,7 @@ public function add_slider2(Request $request)
         $extension3 = $request->file('image3')->getClientOriginalExtension();
         $fileNameToStore3 = $filename3 . '_' . time() . '.' . $extension3;
         $path3 = $request->file('image3')->storeAs('public/slider', $fileNameToStore3);
-    } 
+    }
     if ($request->hasFile('image3')) {
         $slider->image3 = $fileNameToStore3;
     }
@@ -457,7 +474,7 @@ public function add_slider3(Request $request)
         $extension1 = $request->file('image1')->getClientOriginalExtension();
         $fileNameToStore1 = $filename1 . '_' . time() . '.' . $extension1;
         $path1 = $request->file('image1')->storeAs('public/slider', $fileNameToStore1);
-    } 
+    }
     if ($request->hasFile('image1')) {
         $slider->image1 = $fileNameToStore1;
     }
@@ -467,7 +484,7 @@ public function add_slider3(Request $request)
         $extension2 = $request->file('image2')->getClientOriginalExtension();
         $fileNameToStore2 = $filename2 . '_' . time() . '.' . $extension2;
         $path2 = $request->file('image2')->storeAs('public/slider', $fileNameToStore2);
-    } 
+    }
     if ($request->hasFile('image2')) {
         $slider->image2 = $fileNameToStore2;
     }
@@ -478,7 +495,7 @@ public function add_slider3(Request $request)
         $extension3 = $request->file('image3')->getClientOriginalExtension();
         $fileNameToStore3 = $filename3 . '_' . time() . '.' . $extension3;
         $path3 = $request->file('image3')->storeAs('public/slider', $fileNameToStore3);
-    } 
+    }
     if ($request->hasFile('image3')) {
         $slider->image3 = $fileNameToStore3;
     }

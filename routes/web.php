@@ -16,20 +16,21 @@ use App\Slider3;
 |
 */
 
-Route::get('/', function () {
-    $projects = Project::all();
-    $contact = Contact::find(1);
-    $video = Video::find(1);
-    $slider1 = Slider1::find(1);
-    $slider2 = Slider2::find(1);
-    $slider3 = Slider3::find(1);
-    return view('main', compact('projects', 'contact', 'video', 'slider1', 'slider2', 'slider3'));
-});
+// Route::get('/', function () {
+//     $projects = Project::all();
+//     $contact = Contact::find(1);
+//     $video = Video::find(1);
+//     $slider1 = Slider1::find(1);
+//     $slider2 = Slider2::find(1);
+//     $slider3 = Slider3::find(1);
+//     return view('main', compact('projects', 'contact', 'video', 'slider1', 'slider2', 'slider3'));
+// });
 
-Route::get('/main', function () {
-    return view('welcome');
-});
+// Route::get('/main', function () {
+//     return view('welcome');
+// });
 Route::get('/about', 'pagesController@about')->name('about');
+Route::get('/', 'pagesController@main')->name('/');
 Route::get('/services', 'pagesController@services')->name('services');
 Route::get('/projects', 'pagesController@projects')->name('projects');
 Route::get('/partnership', 'pagesController@partnership')->name('partnership');

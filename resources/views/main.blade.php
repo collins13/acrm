@@ -10,8 +10,8 @@
                     <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
                         <div class="slider-content-area">
                             <div class="slide-text" style="margin-top:20px;">
-                                <h1 class="homepage-three-title">Welcome to <span> AFRICA FOR CHRIST FM RADIO
-                                        PROJECTS</span></h1>
+                                <h3 class="homepage-three-title">WELCOME TO <span> AFRICA FOR CHRIST FM RADIO
+                                        PROJECTS</span></h3>
                                 <p style="text-align: justify; color:white">We provide Christ centered free consultancy
                                     and guidance services to all Christian organizations and individual Christians who
                                     have been called to establish Radio stations in Africa.
@@ -61,7 +61,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
                         <div class="slider-content-area">
                             <div class="slide-text" style="margin-top:30px;">
-                                <h1 class="homepage-three-title">Welcome to <span> AFRICA FOR CHRIST FM RADIO
+                                <h1 class="homepage-three-title">WELCOME TO <span> AFRICA FOR CHRIST FM RADIO
                                         PROJECTS</span></h1>
                                 <p style="text-align: justify; color:white">
                                     Africa is largely unentered and the large population is unreached by the gospel of
@@ -121,7 +121,7 @@
                     <div class="col-lg-5 col-md-5 col-sm-3 col-xs-3">
                         <div class="slider-content-area">
                             <div class="slide-text" style="margin-top:70px;">
-                                <h1 class="homepage-three-title">Welcome to <span> AFRICA FOR CHRIST FM RADIO
+                                <h1 class="homepage-three-title">WELCOME TO <span> AFRICA FOR CHRIST FM RADIO
                                         PROJECTS</span></h1>
                                 {{-- <h2>Africa is largely unentered and the large populaon is unreached by the gospel of Christ. </h2> --}}
                                 <p style="text-align: justify; color:white; float:left">
@@ -188,10 +188,10 @@
             <div class="col-md-6">
                 <div class="message-box">
                     <h4>About Us</h4>
-                    <h2>Welcome to AFRICA FOR CHRIST FM RADIO PROJECTS</h2>
+                    <h3>WELCOME TO AFRICA FOR CHRIST FM RADIO PROJECTS</h3>
                     <p class="text-justify">
                         SAMARITAN LAYMEN MINISTRIES we are faith based organization registered and based in New Jersey,
-                        USA. We have a technical office in Dallas TX and in Nairobi Kenya. It is beyond doubt that in
+                        USA. We have a Technical team of devoted Christian engineers and volunteers  based in Nairobi, Kenya. It is beyond doubt that in
                         Africa FM radio is the best media to reach millions of listeners. We support Christian
                         organizations and Individuals to establish FM radio stations in their communities for
                         advancement and sharing of the Gospel of Jesus Christ...
@@ -226,7 +226,7 @@
                         Africa is largely unentered and the large population is unreached by the gospel of Christ. The
                         same population needs soul nurturing through continuous broadcasts and besides the gospel
                         sharing the population need constant teachings and educational programs through radio broadcasts
-                        addressing the issues of Public health, sound sanitation and hygiene
+                        addressing the issues of healthful living  , diet  and nutrition teachings.
                     </p>
 
                     <a href="{{ route('services') }}" class="btn11"><span>Learn More</span>

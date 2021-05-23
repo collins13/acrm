@@ -83,7 +83,7 @@
           <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Welcomwdewde to <span>AFRICA FOR CHRIST RADIO MINISTRIES</span></h2>
+                <h3 class="animated fadeInDown">WELCOME TO <span>AFRICA FOR CHRIST RADIO MINISTRIES</span></h3>
                 <p class="animated fadeInUp">we provide Christ centered free consultancy and guidance services to all Christian organizations and
 					individual Christians who have been called to establish Radio stations for Africa.</p>
                 <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>

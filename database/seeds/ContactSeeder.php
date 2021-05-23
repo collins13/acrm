@@ -18,9 +18,9 @@ class ContactSeeder extends Seeder
             'email1' => 'acrm@gmail.com',
             'email2' => 'acrm@gmail.com',
             'email3' => 'acrm@gmail.com',
-            'phone1' => '908 343 3022',
-            'phone2' => '908-343-3022',
-            'phone3' => '214-897-0088',
+            'phone1' => '+908 343 3022',
+            'phone2' => '+908-343-3022',
+            'phone3' => '+214-897-0088',
             // 'avatar' => file_get_contents('public/users/admin.jpeg'),
         ]);
     }

@@ -119,7 +119,7 @@
 
             @endif
             @endforeach --}}
-            
+
 
             <!-- end service -->
 
@@ -127,6 +127,7 @@
         </div>
 
         <hr class="hr1">
+        <div class="container">
 <h1 class="text-center">Send us proposal below form</h1><hr>
         <form action="{{ route('proposal') }}" method="post" role="form" class="php-email-form">
           @csrf
@@ -169,19 +170,20 @@
                 <div class="validate"></div>
               </div>
             </div>
-         
+
             <div class="form-group">
               <textarea class="form-control" required name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Project description"></textarea>
               <div class="validate"></div>
             </div>
-            
+
             <div class="text-center"><button type="submit" class="btn btn-success btn-block">Submit</button></div>
           </form>
+        </div>
     </div><!-- end container -->
 </div><!-- end section -->
 
 
-<!-- Button trigger modal -->  
+<!-- Button trigger modal -->
   <!-- Modal -->
   <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -229,7 +231,7 @@
 							  <label for="username">Full Name</label>
 							  <input type="text" name="name" class="form-control" required >
 							</div>
-					
+
 							<div class="mb-3">
 							  <label for="email">Email <span class="text-muted"></span></label>
 							  <input type="email" class="form-control" id="email" name="email" required placeholder="you@example.com" required>
@@ -240,14 +242,14 @@
 								<input type="text" class="form-control amont" id="amont" name="amont" required placeholder="eg, $100" required>
 							  </div>
 								<br>
-						 
+
 							<div id="card-element">
 							  <!-- Elements will create input elements here -->
 							</div>
-						  
+
 							<!-- We'll put the error messages in this element -->
 							<div id="card-errors" role="alert"></div>
-						  
+
 							<!-- <button id="submit">Pay</button> -->
 							<hr class="mb-4">
 							<button type="submit" class="btn btn-primary btn-lg btn-block" type="submit">Continue </button>
@@ -265,13 +267,13 @@ text-align: center;
         </style>
         <div class="flex-center position-ref full-height">
 
-  
+
 
           <div class="content">
 
               <h1></h1>
 
-                
+
 
               <table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/in/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/in/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" border="0" alt="PayPal Logo"></a></td></tr></table>
 
@@ -286,12 +288,12 @@ text-align: center;
               <label for="username">Full Name</label>
               <input type="text" name="name" class="form-control" required >
             </div>
-          
+
             <div class="mb-3">
               <label for="email">Email <span class="text-muted"></span></label>
               <input type="email" class="form-control" id="email" name="email" required placeholder="you@example.com" required>
             </div>
-          
+
             <div class="mb-3">
               <label for="amount">Amount Donating <span class="text-muted"></span></label>
               <input type="text" class="form-control amont" id="amont" name="amont" required placeholder="eg, $100" required>
@@ -334,5 +336,5 @@ $("#card").click(function(){
 	})
 })
 </script>
-  
+
 @endpush

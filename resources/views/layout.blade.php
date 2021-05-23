@@ -1,7 +1,7 @@
 <?php $contact = App\Contact::find(1); ?>
 <!DOCTYPE html>
 <html lang="en">
-
+    {!! SEO::generate(true) !!}
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

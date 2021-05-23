@@ -8,7 +8,7 @@
                 <h2 class="text-white pb-4 fw-bold">Projects</h2>
                 {{-- <h5 class="text-white op-7 mb-2">Free Bootstrap 4 Admin Dashboard</h5> --}}
             </div>
-        
+
         </div>
     </div>
 </div>
@@ -41,12 +41,12 @@
                 </td>
               </tr>
               @endforeach
-              
+
             </tbody>
           </table>
       </div>
 </div>
-<!-- Button trigger modal -->  
+<!-- Button trigger modal -->
   <!-- Modal -->
   <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -80,7 +80,7 @@
                     {{-- <label for="desc">Project Description</label> --}}
                     <textarea name="desc" id="desc" cols="30" rows="10" hidden class="form-control">test</textarea>
                   </div>
-                  
+
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -88,7 +88,7 @@
               </div>
           </form>
         </div>
-       
+
       </div>
     </div>
   </div>
@@ -127,7 +127,7 @@
                     {{-- <label for="desc">Project Description</label> --}}
                     <textarea name="editdesc" id="editdesc" cols="30" rows="10" hidden class="form-control">test</textarea>
                   </div>
-                  
+
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -135,7 +135,7 @@
               </div>
           </form>
         </div>
-       
+
       </div>
     </div>
   </div>
@@ -145,7 +145,7 @@
 
 <script>
     $(document).ready(function(){
-       
+
         $('#project-table').DataTable();
 
         $("#new-p").click(function(){
@@ -179,12 +179,12 @@
             if(confirm("Are you sure you want to delete?!")){
                 toastr.warning('deleting...',"warning")
                 $.ajax({
-                    url:"/delete/"+id,
+                    url:"/acrm/delete/"+id,
                     data:{'id':id, "_token":token},
                     type:"post",
                     success:function(res){
                         console.log(res.status);
-                        
+
                         if(res.status == 1){
                             toastr.success("Project deleted successful", "success");
                         }

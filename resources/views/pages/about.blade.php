@@ -23,17 +23,17 @@
 			<div class="col-md-6">
 				<div class="message-box">
 					<h4>About Us</h4>
-					<h2>Welcome to AFRICA FOR CHRIST FM RADIO PROJECTS</h2>
+					<h3>WELCOME TO AFRICA FOR CHRIST FM RADIO PROJECTS</h3>
 					<div class="section-title" style="text-align: left;">
-						<p>1. We receive & process requests from allover Africa for FMs & SDTs</p>
+						<p>1. We receive & process requests from allover Africa for FM Radio stations & Podcasts</p>
 					   <p> 2. We identify and verify presented projects to determine their viability and sustainability to professional and technical standards for the interest of the targeted community</p>
-					
-					   <p>3. We do site survey and acertain technical parameters, management, sustainability, local government licensing and we address any challenge pertaining to the a particular projec</p>
-					   
+
+					   <p>3. We do site survey and acertain technical parameters, management, sustainability, local government licensing and we address any challenge pertaining to the a particular project.</p>
+
 					   <p>4.We list all those projects for funding from within and without</p>
-					   
+
 					   <p>5.We implement those projects, commission them, train technical support stuff with terms and conditions of services and operation contract agreement entered into.</p>
-					   
+
 					   <p>6. We periodically monitor the progress and operations of these stations and terminals</p>
 					  </div>
 
@@ -50,9 +50,9 @@
 			</div><!-- end col -->
 		</div><!-- end row -->
 
-		<hr class="hr1"> 
+		<hr class="hr1">
 
-	
+
 	</div><!-- end container -->
 </div><!-- end section -->
 
