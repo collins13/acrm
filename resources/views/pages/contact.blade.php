@@ -55,7 +55,7 @@
 			</div>
 		</div><!-- end col -->
 	</div><!-- end row -->
-	
+
 	<div class="row">
 		<div class="offset-md-1 col-sm-10 col-md-10 offset-sm-1 pd-add">
 			<div class="address-item">
@@ -81,7 +81,7 @@
 			</div>
 		</div>
 	</div><!-- end row -->
-	
+
 </div><!-- end container -->
 </div><!-- end section -->
 @endsection

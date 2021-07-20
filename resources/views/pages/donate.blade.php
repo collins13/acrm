@@ -24,7 +24,7 @@
 </div>
 <div class="card">
 	{{-- <div class="card-header">
-	  
+
 	</div> --}}
 	<div class="card-body">
 		<div class="container">
@@ -43,7 +43,7 @@
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="paypal" id="paypal" value="option1">
 								<label class="form-check-label" for="exampleRadios1">
-									<i class="fa fa-paypal" aria-hidden="true"> PAYPAL</i> 
+									<i class="fa fa-paypal" aria-hidden="true"> PAYPAL</i>
 								</label>
 							  </div>
 						</div>
@@ -51,7 +51,7 @@
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="paypal" id="card-pay" value="option2">
 								<label class="form-check-label" for="exampleRadios1">
-									<i class="fa fa-credit-card" aria-hidden="true"> Card Donation method</i> 
+									<i class="fa fa-credit-card" aria-hidden="true"> Card Donation method</i>
 								</label>
 							  </div>
 						</div>
@@ -74,7 +74,7 @@
 							ACH routing number: 081904808
 						  </p>
 						  <p>
-							Address: 3853 Cheryl CT, 
+							Address: 3853 Cheryl CT,
 							AURORA, IL 60504
 						  </p>
 						</div>
@@ -107,7 +107,7 @@
 				</div>
 			</div><br>
 			@endforeach
-			
+
 		</div>
 	</div>
 	</div>
@@ -142,25 +142,25 @@
 								<label for="username">Full Name</label>
 								<input type="text" name="name" class="form-control" required >
 							  </div>
-					  
+
 							  <div class="mb-3">
 								<label for="email">Email <span class="text-muted"></span></label>
 								<input type="email" class="form-control" id="email" name="email" required placeholder="you@example.com" required>
 							  </div>
-  
+
 							  <div class="mb-3">
 								  <label for="amount">Amount Donating <span class="text-muted"></span></label>
 								  <input type="text" class="form-control amont" id="amont" name="amont" required placeholder="eg, 100" required>
 								</div>
 								  <br>
-						   
+
 							  <div id="card-element">
 								<!-- Elements will create input elements here -->
 							  </div>
-							
+
 							  <!-- We'll put the error messages in this element -->
 							  <div id="card-errors" role="alert"></div>
-							
+
 							  <!-- <button id="submit">Pay</button> -->
 							  <hr class="mb-4">
 							  <button type="submit" class="btn btn-primary btn-lg btn-block" type="submit">Donate </button>
@@ -169,29 +169,29 @@
 			  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 		  <style>
 			.content {
-  
+
 				margin-top: 5px;
-				
+
 				text-align: center;
-				
+
 				}
 		  </style>
 		  <div class="flex-center position-ref full-height">
-  
-	
-  
+
+
+
 			<div class="content">
-  
+
 				<h1></h1>
-  
-				  
-  
+
+
+
 				<table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/in/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/in/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" border="0" alt="PayPal Logo"></a></td></tr></table>
-  
-  
-  
+
+
+
 				{{-- <a href="{{ route('payment') }}" class="btn btn-success">Pay $100 from Paypal</a> --}}
-  
+
 			</div>
 			<form action="{{ route('payment') }}" method="POST">
 			  @csrf
@@ -199,12 +199,12 @@
 				<label for="username">Full Name</label>
 				<input type="text" name="name" class="form-control" required >
 			  </div>
-			
+
 			  <div class="mb-3">
 				<label for="email">Email <span class="text-muted"></span></label>
 				<input type="email" class="form-control" id="email" name="email" required placeholder="you@example.com" required>
 			  </div>
-			
+
 			  <div class="mb-3">
 				<label for="amount">Amount Donating <span class="text-muted"></span></label>
 				<input type="text" class="form-control amont" id="amont" name="amont" required placeholder="eg, $100" required>
@@ -212,7 +212,7 @@
 				<br>
 				<button type="submit" class="btn btn-success">Pay from Paypal</button>
 			</form>
-  
+
 		</div>
 		</div>
 			  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
@@ -227,7 +227,7 @@
   </div>
 
 <!-- Button trigger modal -->
-  
+
   <!-- Modal -->
   <div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-lg" role="document">
@@ -239,7 +239,7 @@
 		  </button>
 		</div>
 		<div class="modal-body">
-			
+
 			<form action="/charge" method="post" id="payment-form">
 				<div class="form-row">
 				  <label for="card-element">
@@ -248,11 +248,11 @@
 				  <div id="card-element">
 					<!-- A Stripe Element will be inserted here. -->
 				  </div>
-			  
+
 				  <!-- Used to display form errors. -->
 				  <div id="card-errors" role="alert"></div>
 				</div>
-			  
+
 				<button>Submit Payment</button>
 			  </form>
 		</div>
@@ -264,7 +264,7 @@
 	</div>
   </div>
 
-  
+
   <!-- Modal -->
   <div class="modal fade" id="paypal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-lg" role="document">
@@ -278,29 +278,29 @@
 		<div class="modal-body">
 			<style>
 				.content {
-	  
+
 					/* margin-top: 2px; */
-					
+
 					text-align: center;
-					
+
 					}
 			  </style>
 			  <div class="flex-center position-ref full-height">
-	  
-		
-	  
+
+
+
 				<div class="content">
-	  
+
 					<h1></h1>
-	  
-					  
-	  
+
+
+
 					<table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/in/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/in/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" border="0" alt="PayPal Logo"></a></td></tr></table>
-	  
-	  
-	  
+
+
+
 					{{-- <a href="{{ route('payment') }}" class="btn btn-success">Pay $100 from Paypal</a> --}}
-	  
+
 				</div>
 				<form action="{{ route('payment') }}" method="POST">
 				  @csrf
@@ -308,12 +308,12 @@
 					<label for="username">Full Name</label>
 					<input type="text" name="name" class="form-control" required >
 				  </div>
-				
+
 				  <div class="mb-3">
 					<label for="email">Email <span class="text-muted"></span></label>
 					<input type="email" class="form-control" id="email" name="email" required placeholder="you@example.com" required>
 				  </div>
-				
+
 				  <div class="mb-3">
 					<label for="amount">Amount Donating <span class="text-muted"></span></label>
 					<input type="text" class="form-control amont" id="amont" name="amont" required placeholder="eg, 100" required>
@@ -321,7 +321,7 @@
 					<br>
 					<button type="submit" class="btn btn-success">Pay from Paypal</button>
 				</form>
-	  
+
 			</div>
 		</div>
 		<div class="modal-footer">
@@ -350,7 +350,7 @@
 						  <label for="username">Full Name</label>
 						  <input type="text" name="name" class="form-control" required >
 						</div>
-				
+
 						<div class="mb-3">
 						  <label for="email">Email <span class="text-muted"></span></label>
 						  <input type="email" class="form-control" id="email" name="email" required placeholder="you@example.com" required>
@@ -361,14 +361,14 @@
 							<input type="text" class="form-control amont" id="amont" name="amont" required placeholder="eg, $100" required>
 						  </div>
 							<br>
-					 
+
 						<div id="card-element">
 						  <!-- Elements will create input elements here -->
 						</div>
-					  
+
 						<!-- We'll put the error messages in this element -->
 						<div id="card-errors" role="alert"></div>
-					  
+
 						<!-- <button id="submit">Pay</button> -->
 						<hr class="mb-4">
 						<button type="submit" class="btn btn-primary btn-lg btn-block" type="submit">Continue </button>
@@ -408,5 +408,5 @@ $(document).ready(function(){
 })
 </script>
 
-    
+
 @endpush

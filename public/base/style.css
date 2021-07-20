@@ -3134,7 +3134,7 @@ select.mobile-device {
 
 .banner-bg-1{
 	background: url(uploads/color_background_surface_solid_18481_2560x1080.jpg);
-	padding: 120px 0;
+	padding: 120px 1;
 	background-clip: initial;
 	background-color: rgba(0, 0, 0, 0);
 	background-origin: initial;

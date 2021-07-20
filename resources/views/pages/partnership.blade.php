@@ -69,19 +69,19 @@
               <div id="card-element">
 							  <!-- Elements will create input elements here -->
 							</div>
-						  
+
 							<!-- We'll put the error messages in this element -->
 							<div id="card-errors" role="alert"></div>
-						  
+
 							<!-- <button id="submit">Pay</button> -->
             </div>
-          
+
 							<br> --}}
             <div class="form-group">
               <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Project description"></textarea>
               <div class="validate"></div>
             </div>
-            
+
             <div class="text-center">
               <hr class="mb-4">
 							<button type="submit" class="btn btn-primary btn-lg btn-block">Continue </button>
@@ -94,5 +94,5 @@
 @push('scripts')
 <script src="https://js.stripe.com/v3/"></script>
 <script src="/base/js/stripe.js"></script>
-    
+
 @endpush

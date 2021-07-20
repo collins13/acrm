@@ -8,7 +8,7 @@
                 <h2 class="text-white pb-4 fw-bold">Contact details</h2>
                 {{-- <h5 class="text-white op-7 mb-2">Free Bootstrap 4 Admin Dashboard</h5> --}}
             </div>
-        
+
         </div>
     </div>
 </div>
@@ -57,7 +57,7 @@
           </table>
       </div>
 </div>
-<!-- Button trigger modal -->  
+<!-- Button trigger modal -->
   <!-- Modal -->
   <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -100,19 +100,19 @@
             <br><br>
             <div class="col-md-6">
               <label for="phone">Mobile No</label>
-              <input type="number" name="mobile" id="mobile" class="form-control"><br><br>
+              <input type="text" name="mobile" id="mobile" class="form-control"><br><br>
             </div>
             <br><br>
             <div class="col-md-6">
               <label for="phone">Mobile No.2 (optional)</label>
-              <input type="number" name="mobile2" id="mobile2" class="form-control">
+              <input type="text" name="mobile2" id="mobile2" class="form-control">
             </div>
             <div class="col-md-6">
               <label for="phone">Mobile No.3(optional)</label>
-              <input type="number" name="mobile3" id="mobile3" class="form-control">
+              <input type="text" name="mobile3" id="mobile3" class="form-control">
             </div>
             <br><br>
-              
+
               </div><br>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -120,7 +120,7 @@
               </div>
           </form>
         </div>
-       
+
       </div>
     </div>
   </div>
@@ -156,7 +156,7 @@
               </div>
           </form>
         </div>
-       
+
       </div>
     </div>
   </div>
@@ -166,7 +166,7 @@
 
 <script>
     $(document).ready(function(){
-       
+
         $('#plan-table').DataTable({
             responsive: true
         });
@@ -214,7 +214,7 @@
                     type:"post",
                     success:function(res){
                         console.log(res.status);
-                        
+
                         if(res.status == 1){
                             toastr.success("Project deleted successful", "success");
                         }
