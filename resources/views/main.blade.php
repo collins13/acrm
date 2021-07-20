@@ -275,7 +275,7 @@
                             <div class="post-media wow fadeIn">
                                 <a href="/base/uploads/service_01.jpg" data-rel="prettyPhoto[gal]"
                                     class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                <img src="/storage/images/{{ $project->image }}" alt="" class="img-fluid img-rounded">
+                                <img src="/storage/images/{{ $project->image }}" alt="" class="img-fluid img-rounded" style="height: 300px;">
                             </div>
                             <div class="service-dit">
                                 <h3>{{ $project->name }}</h3>
