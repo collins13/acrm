@@ -78,12 +78,15 @@ Route::post('/proposal', 'AdminController@proposal')->name('proposal');
 
 Route::post('/call', 'AdminController@call')->name('call');
 Route::post('/prayer', 'AdminController@prayer')->name('prayer');
-Route::post('payment', 'PayPalController@payment')->name('payment');
-Route::post('/new_partnership', 'AdminController@new_partnership')->name('new_partnership');
+// Route::post('payment', 'PayPalController@payment')->name('payment');
+// Route::post('/new_partnership', 'AdminController@new_partnership')->name('new_partnership');
 
-Route::get('cancel', 'PayPalController@cancel')->name('payment.cancel');
+// Route::get('cancel', 'PayPalController@cancel')->name('payment.cancel');
 
-Route::get('payment/success', 'PayPalController@success')->name('payment.success');
+// Route::get('payment/success', 'PayPalController@success')->name('payment.success');
+
+Route::post('/payment', ['as' => 'payment', 'uses' => 'PayPalController@payWithpaypal']);
+Route::get('/payment/status',['as' => 'status', 'uses' => 'PayPalController@getPaymentStatus']);
 
 
 Auth::routes([
