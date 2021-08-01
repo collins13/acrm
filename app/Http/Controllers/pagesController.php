@@ -125,6 +125,11 @@ class pagesController extends Controller
         return redirect()->back();
     }
 
+    public function stream(Request $request)
+    {
+        return view('pages.stream');
+    }
+
 
 
 }

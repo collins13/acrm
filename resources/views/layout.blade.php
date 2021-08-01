@@ -103,6 +103,7 @@
                         <li><a href="{{ route('donate') }}">Donate</a></li>
                         {{-- <li><a href="pricing.html">Pricing</a></li> --}}
 						<li><a href="{{ route('contact') }}">Contact</a></li>
+						<li><a href="{{ route('stream') }}">Live Stream</a></li>
                     </ul>
                 </div>
             </div>

@@ -62,9 +62,9 @@
 						<div class="card-body">
 							<h3>Bank Details</h3>
 						  <p>
-							Account name: ENOCH M  MACHORA
+							request for bank transfer details if that is your prefered method . Text or call +19727031004
 						  </p>
-						  <p>
+						  {{-- <p>
 							Bank of America
 						  </p>
 						  <p>
@@ -76,7 +76,7 @@
 						  <p>
 							Address: 3853 Cheryl CT,
 							AURORA, IL 60504
-						  </p>
+						  </p> --}}
 						</div>
 					  </div>
 				</div>

@@ -41,6 +41,7 @@ Route::get('/community', 'pagesController@community')->name('community');
 Route::get('/podcast', 'pagesController@podcast')->name('podcast');
 Route::get('/stripe', 'pagesController@stripe')->name('stripe');
 Route::post('/charge', 'pagesController@charge')->name('charge');
+Route::get('/stream', 'pagesController@stream')->name('stream');
 
 // backend routes
 
@@ -79,7 +80,7 @@ Route::post('/proposal', 'AdminController@proposal')->name('proposal');
 Route::post('/call', 'AdminController@call')->name('call');
 Route::post('/prayer', 'AdminController@prayer')->name('prayer');
 // Route::post('payment', 'PayPalController@payment')->name('payment');
-// Route::post('/new_partnership', 'AdminController@new_partnership')->name('new_partnership');
+Route::post('/new_partnership', 'AdminController@new_partnership')->name('new_partnership');
 
 // Route::get('cancel', 'PayPalController@cancel')->name('payment.cancel');
 
